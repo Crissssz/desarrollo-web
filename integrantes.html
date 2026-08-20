@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrantes del Equipo</title>
+    
+    <!-- Importación de fuentes de Google Fonts (DotGothic16 y Nunito) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="imagen-pestaña.png">
+    <!-- Carga de Bootstrap por CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Tu archivo de CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+
+<style>
+    /* Estilo general con fuente redondeada */
+    html, body {
+        background-color: #DFF2FE; 
+        font-family: 'Nunito', sans-serif; 
+    }
+    
+    /* Fuente exclusiva para los títulos principales y nombres */
+    h1, h2, h3, h4, h5, .card-title {
+        font-family: 'DotGothic16', sans-serif;
+    }
+
+    /* Subtítulos con Nunito en negrita */
+    .card-subtitle {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700; /* Negrita para que resalte y no se vea delgada */
+        font-size: 0.95rem; /* Un poco más grande para mejor lectura */
+        color: #4a5568 !important; /* Un gris oscuro azulado muy elegante */
+    }
+
+    /* Estilos de las tarjetas */
+    .card {
+        border-radius: 15px; 
+        transition: transform 0.2s; 
+    }
+    .card:hover {
+        transform: scale(1.05); 
+    }
+</style>
+
+</head>
+
+<body>
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Bienvenido a Nuestro Proyecto</h1>
+        <p class="text-center mb-5">Explora nuestro equipo y nuestras investigaciones en desarrollo web.</p>
+
+        <!-- Fila de Tarjetas -->
+        <div class="row text-center justify-content-center">
+            
+            <!-- Tarjeta 1: Damon -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Damon Murray</h3>
+                        <h6 class="card-subtitle mb-3 text-muted">QA & Desarrollador Front-end</h6>
+                        <p class="card-text">Especialista en QA, diseño web y CSS.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2: Nicolás -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Nicolás Contreras</h3>
+                        <h6 class="card-subtitle mb-3 text-muted">Scrum Master</h6>
+                        <p class="card-text">Encargado de la gestión de tareas, historias de usuario y reflexiones del equipo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3: Cristóbal -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Cristóbal Garrido</h3>
+                        <h6 class="card-subtitle mb-3 text-muted">Git Manager & Contenedores</h6>
+                        <p class="card-text">Responsable del control de versiones, entorno de Docker y despliegue en Nginx.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4: Ítalo -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Ítalo Osorio</h3>
+                        <h6 class="card-subtitle mb-3 text-muted">Desarrollador HTML</h6>
+                        <p class="card-text">Especialista en semántica web, etiquetas de uso común y barra de navegación.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 5: Benjamín -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Benjamín Contreras</h3>
+                        <h6 class="card-subtitle mb-3 text-muted">Desarrollador Back-end</h6>
+                        <p class="card-text">Encargado de la página de integrantes y la documentación de comandos de Docker.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body> 
+</html>

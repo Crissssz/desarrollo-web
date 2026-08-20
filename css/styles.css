@@ -1,0 +1,7 @@
+/* Escala personalizada Lila-Celeste para badges */
+    .tech-badge { font-size: 1rem; padding: 10px 15px; margin: 5px; color: #2d3748 !important; border-radius: 8px; }
+    .bg-tech-html { background-color: #B3E0FF; } /* Celeste fuerte */
+    .bg-tech-css { background-color: #BDE0FA; }  /* Celeste suave */
+    .bg-tech-boot { background-color: #C8D5F6; } /* Transición azulada */
+    .bg-tech-nginx { background-color: #D3CAF2; } /* Lila suave */
+    .bg-tech-docker { background-color: #DDBEEE; } /* Lila intenso */
