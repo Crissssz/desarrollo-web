@@ -1,0 +1,786 @@
+<!doctype html>
+<html lang="es" class="fondo-vintage">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etiquetas HTML | Los Contenedores Web</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap 5.3.0 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="fondo-vintage">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand retro-title" href="index.html"
+          >Los Contenedores Web</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="integrantes.html">Integrantes</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="investigaciones.html"
+                >Investigaciones</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="container text-center my-5">
+      <h1 class="display-4 retro-title">Etiquetas HTML</h1>
+      <p class="lead">
+        Etiquetas semánticas y etiquetas de uso común, con ejemplos aplicados a
+        este sitio
+      </p>
+    </header>
+
+    <main class="container mb-5">
+      <ul class="nav nav-tabs mb-4" id="etiquetasTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="semanticas-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#semanticas"
+            type="button"
+            role="tab"
+            aria-controls="semanticas"
+            aria-selected="true"
+          >
+            Etiquetas semánticas
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="comunes-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#comunes"
+            type="button"
+            role="tab"
+            aria-controls="comunes"
+            aria-selected="false"
+          >
+            Etiquetas de uso común
+          </button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="etiquetasTabContent">
+        <!-- ============================================= -->
+        <!-- SECCION 1: ETIQUETAS SEMANTICAS -->
+        <!-- ============================================= -->
+        <div
+          class="tab-pane fade show active"
+          id="semanticas"
+          role="tabpanel"
+          aria-labelledby="semanticas-tab"
+        >
+          <section class="row mb-3">
+            <div class="col-md-12 mb-3">
+              <div class="card h-100 p-4 shadow-sm">
+                <p class="mb-0">
+                  Las etiquetas semánticas describen el significado del
+                  contenido que envuelven, no solo su apariencia. Esto mejora la
+                  accesibilidad, el SEO y la mantenibilidad del código. A
+                  continuación, un acordeón con las etiquetas semánticas
+                  principales, usadas ya en las páginas de este sitio.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="row mb-5">
+            <div class="col-md-12">
+              <div class="accordion" id="accordionSemanticas">
+                <article class="accordion-item">
+                  <h2 class="accordion-header" id="heading-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse-header"
+                      aria-expanded="true"
+                      aria-controls="collapse-header"
+                    >
+                      &lt;header&gt;
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse-header"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="heading-header"
+                    data-bs-parent="#accordionSemanticas"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        <strong>Propósito:</strong> agrupa el contenido
+                        introductorio de una página o sección: título principal,
+                        subtítulo, logo o texto de presentación.
+                      </p>
+                      <pre
+                        class="bg-light p-3 rounded"
+                      ><code>&lt;header class="container text-center my-5"&gt;
+    &lt;h1 class="display-4 retro-title"&gt;Investigaciones&lt;/h1&gt;
+    &lt;p class="lead"&gt;Temas explorados por el equipo&lt;/p&gt;
+&lt;/header&gt;</code></pre>
+                      <aside class="border-start ps-3 mt-2">
+                        <small
+                          ><strong>Dónde se usa:</strong> en
+                          <code>index.html</code>,
+                          <code>integrantes.html</code>,
+                          <code>investigaciones.html</code> e
+                          <code>investigacion_css.html</code>, todos abren su
+                          <code>&lt;main&gt;</code> con un
+                          <code>&lt;header&gt;</code> igual a este.</small
+                        >
+                      </aside>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="accordion-item">
+                  <h2 class="accordion-header" id="heading-nav">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse-nav"
+                      aria-expanded="false"
+                      aria-controls="collapse-nav"
+                    >
+                      &lt;nav&gt;
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse-nav"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading-nav"
+                    data-bs-parent="#accordionSemanticas"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        <strong>Propósito:</strong> agrupa los enlaces de
+                        navegación principal del sitio, para que lectores de
+                        pantalla y buscadores identifiquen el menú como un
+                        bloque de navegación.
+                      </p>
+                      <pre
+                        class="bg-light p-3 rounded"
+                      ><code>&lt;nav class="navbar navbar-expand-lg"&gt;
+    &lt;div class="container"&gt;
+        &lt;a class="navbar-brand retro-title" href="index.html"&gt;Los Contenedores Web&lt;/a&gt;
+        &lt;!-- enlaces --&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+                      <aside class="border-start ps-3 mt-2">
+                        <small
+                          ><strong>Dónde se usa:</strong> en el
+                          <code>&lt;nav&gt;</code> reutilizado en todas las
+                          páginas del sitio (ver arriba de esta misma
+                          página).</small
+                        >
+                      </aside>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="accordion-item">
+                  <h2 class="accordion-header" id="heading-main">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse-main"
+                      aria-expanded="false"
+                      aria-controls="collapse-main"
+                    >
+                      &lt;main&gt;
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse-main"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading-main"
+                    data-bs-parent="#accordionSemanticas"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        <strong>Propósito:</strong> envuelve el contenido único
+                        y central de la página, distinto del que se repite en
+                        otras páginas (nav, footer). Debe existir solo una vez
+                        por página.
+                      </p>
+                      <pre
+                        class="bg-light p-3 rounded"
+                      ><code>&lt;main class="container"&gt;
+    &lt;section class="row mb-5"&gt;
+        ...
+    &lt;/section&gt;
+&lt;/main&gt;</code></pre>
+                      <aside class="border-start ps-3 mt-2">
+                        <small
+                          ><strong>Dónde se usa:</strong> en
+                          <code>etiquetas-html.html</code> (esta página)
+                          envuelve las tabs y el acordeón; también en
+                          <code>investigaciones.html</code> envuelve el listado
+                          de temas.</small
+                        >
+                      </aside>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="accordion-item">
+                  <h2 class="accordion-header" id="heading-section">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse-section"
+                      aria-expanded="false"
+                      aria-controls="collapse-section"
+                    >
+                      &lt;section&gt;
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse-section"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading-section"
+                    data-bs-parent="#accordionSemanticas"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        <strong>Propósito:</strong> agrupa un bloque temático
+                        con entidad propia dentro del documento, normalmente con
+                        su propio encabezado.
+                      </p>
+                      <pre
+                        class="bg-light p-3 rounded"
+                      ><code>&lt;section class="row mb-5"&gt;
+    &lt;div class="col-md-12 mb-3"&gt;
+        &lt;div class="card h-100 p-4 shadow-sm"&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                      <aside class="border-start ps-3 mt-2">
+                        <small
+                          ><strong>Dónde se usa:</strong> patrón repetido en
+                          <code>investigacion_css.html</code> e
+                          <code>investigaciones.html</code>, y en las dos
+                          secciones de esta página (semánticas / uso
+                          común).</small
+                        >
+                      </aside>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="accordion-item">
+                  <h2 class="accordion-header" id="heading-article">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse-article"
+                      aria-expanded="false"
+                      aria-controls="collapse-article"
+                    >
+                      &lt;article&gt;
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse-article"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading-article"
+                    data-bs-parent="#accordionSemanticas"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        <strong>Propósito:</strong> contenido independiente y
+                        autocontenido que tendría sentido por sí solo fuera del
+                        contexto de la página (una noticia, una tarjeta de
+                        integrante, un ítem de acordeón).
+                      </p>
+                      <pre
+                        class="bg-light p-3 rounded"
+                      ><code>&lt;article class="accordion-item"&gt;
+    &lt;h2 class="accordion-header"&gt;...&lt;/h2&gt;
+    &lt;div class="accordion-collapse collapse"&gt;...&lt;/div&gt;
+&lt;/article&gt;</code></pre>
+                      <aside class="border-start ps-3 mt-2">
+                        <small
+                          ><strong>Dónde se usa:</strong> cada ítem de este
+                          acordeón es un <code>&lt;article&gt;</code>; también
+                          podría usarse en <code>integrantes.html</code> para
+                          cada tarjeta de integrante.</small
+                        >
+                      </aside>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="accordion-item">
+                  <h2 class="accordion-header" id="heading-aside">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse-aside"
+                      aria-expanded="false"
+                      aria-controls="collapse-aside"
+                    >
+                      &lt;aside&gt;
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse-aside"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading-aside"
+                    data-bs-parent="#accordionSemanticas"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        <strong>Propósito:</strong> contenido relacionado pero
+                        secundario respecto al flujo principal: notas, tips,
+                        datos curiosos, referencias.
+                      </p>
+                      <pre
+                        class="bg-light p-3 rounded"
+                      ><code>&lt;aside class="border-start ps-3 mt-2"&gt;
+    &lt;small&gt;&lt;strong&gt;Dónde se usa:&lt;/strong&gt; ...&lt;/small&gt;
+&lt;/aside&gt;</code></pre>
+                      <aside class="border-start ps-3 mt-2">
+                        <small
+                          ><strong>Dónde se usa:</strong> cada nota "Dónde se
+                          usa" dentro de esta sección es en sí misma un
+                          <code>&lt;aside&gt;</code>.</small
+                        >
+                      </aside>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="accordion-item">
+                  <h2 class="accordion-header" id="heading-footer">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse-footer"
+                      aria-expanded="false"
+                      aria-controls="collapse-footer"
+                    >
+                      &lt;footer&gt;
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse-footer"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading-footer"
+                    data-bs-parent="#accordionSemanticas"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        <strong>Propósito:</strong> pie de página o de sección:
+                        créditos, datos de contacto, enlaces legales o de
+                        cierre.
+                      </p>
+                      <pre
+                        class="bg-light p-3 rounded"
+                      ><code>&lt;footer class="text-center py-4"&gt;
+    &lt;p&gt;&amp;copy; 2026 Los Contenedores Web&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+                      <aside class="border-start ps-3 mt-2">
+                        <small
+                          ><strong>Dónde se usa:</strong> se recomienda
+                          agregarlo al final de <code>index.html</code> y del
+                          resto de páginas para unificar el cierre del
+                          sitio.</small
+                        >
+                      </aside>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- ============================================= -->
+        <!-- SECCION 2: ETIQUETAS DE USO COMUN -->
+        <!-- ============================================= -->
+        <div
+          class="tab-pane fade"
+          id="comunes"
+          role="tabpanel"
+          aria-labelledby="comunes-tab"
+        >
+          <section class="row mb-3">
+            <div class="col-md-12 mb-3">
+              <div class="card h-100 p-4 shadow-sm">
+                <p class="mb-0">
+                  Estas son las etiquetas HTML más frecuentes para dar
+                  estructura y contenido a una página, sin implicar por sí
+                  mismas un significado semántico particular.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="row mb-5">
+            <div class="col-md-12">
+              <div class="accordion" id="accordionComunes">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading-h1h6">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse-h1h6"
+                      aria-expanded="true"
+                      aria-controls="collapse-h1h6"
+                    >
+                      &lt;h1&gt; a &lt;h6&gt;
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse-h1h6"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="heading-h1h6"
+                    data-bs-parent="#accordionComunes"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        <strong>Cuándo usarla:</strong> para títulos y
+                        subtítulos, respetando el orden jerárquico (un solo
+                        <code>&lt;h1&gt;</code> por página, luego
+                        <code>&lt;h2&gt;</code>, etc.), sin saltarse niveles
+                        solo por estética.
+                      </p>
+                      <p>
+                        <strong>Ejemplo en el sitio:</strong> el título
+                        principal de esta página usa
+                        <code
+                          >&lt;h1 class="display-4 retro-title"&gt;Etiquetas
+                          HTML&lt;/h1&gt;</code
+                        >, y cada etiqueta del acordeón usa un
+                        <code>&lt;h2&gt;</code> dentro de
+                        <code>.accordion-header</code>.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading-p">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse-p"
+                      aria-expanded="false"
+                      aria-controls="collapse-p"
+                    >
+                      &lt;p&gt;
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse-p"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading-p"
+                    data-bs-parent="#accordionComunes"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        <strong>Cuándo usarla:</strong> para párrafos de texto
+                        corrido; nunca para simular espaciado con párrafos
+                        vacíos.
+                      </p>
+                      <p>
+                        <strong>Ejemplo en el sitio:</strong> el texto
+                        introductorio de cada tarjeta <code>.card</code>, como
+                        en <code>investigacion_css.html</code>.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading-a">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse-a"
+                      aria-expanded="false"
+                      aria-controls="collapse-a"
+                    >
+                      &lt;a&gt;
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse-a"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading-a"
+                    data-bs-parent="#accordionComunes"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        <strong>Cuándo usarla:</strong> para cualquier enlace,
+                        interno o externo. El atributo <code>href</code> es
+                        obligatorio para que sea navegable.
+                      </p>
+                      <p>
+                        <strong>Ejemplo en el sitio:</strong> los enlaces de la
+                        navbar, como
+                        <code
+                          >&lt;a class="nav-link"
+                          href="integrantes.html"&gt;Integrantes&lt;/a&gt;</code
+                        >.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading-img">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse-img"
+                      aria-expanded="false"
+                      aria-controls="collapse-img"
+                    >
+                      &lt;img&gt;
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse-img"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading-img"
+                    data-bs-parent="#accordionComunes"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        <strong>Cuándo usarla:</strong> para incrustar imágenes;
+                        siempre con atributo <code>alt</code> descriptivo por
+                        accesibilidad.
+                      </p>
+                      <p>
+                        <strong>Ejemplo en el sitio:</strong> fotos de perfil en
+                        <code>integrantes.html</code>, por ejemplo
+                        <code
+                          >&lt;img src="img/integrante1.jpg" alt="Foto de
+                          [Nombre]" class="rounded-circle"&gt;</code
+                        >.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading-ulol">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse-ulol"
+                      aria-expanded="false"
+                      aria-controls="collapse-ulol"
+                    >
+                      &lt;ul&gt;, &lt;ol&gt; y &lt;li&gt;
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse-ulol"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading-ulol"
+                    data-bs-parent="#accordionComunes"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        <strong>Cuándo usarla:</strong>
+                        <code>&lt;ul&gt;</code> para listas sin orden
+                        específico, <code>&lt;ol&gt;</code> cuando el orden
+                        importa (pasos, ranking); <code>&lt;li&gt;</code> es el
+                        elemento de cada ítem en ambas.
+                      </p>
+                      <p>
+                        <strong>Ejemplo en el sitio:</strong> los ítems de la
+                        navbar:
+                        <code
+                          >&lt;ul class="navbar-nav ms-auto"&gt;&lt;li
+                          class="nav-item"&gt;...&lt;/li&gt;&lt;/ul&gt;</code
+                        >.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading-divspan">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse-divspan"
+                      aria-expanded="false"
+                      aria-controls="collapse-divspan"
+                    >
+                      &lt;div&gt; y &lt;span&gt;
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse-divspan"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading-divspan"
+                    data-bs-parent="#accordionComunes"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        <strong>Cuándo usarla:</strong> contenedores genéricos
+                        sin significado semántico, usados solo para estructura o
+                        estilo (por ejemplo, el grid de Bootstrap).
+                        <code>&lt;div&gt;</code> es de bloque,
+                        <code>&lt;span&gt;</code> es en línea. Deben preferirse
+                        las etiquetas semánticas cuando exista una equivalente
+                        adecuada.
+                      </p>
+                      <p>
+                        <strong>Ejemplo en el sitio:</strong>
+                        <code
+                          >&lt;div class="col-md-12 mb-3"&gt;&lt;div class="card
+                          h-100 p-4
+                          shadow-sm"&gt;...&lt;/div&gt;&lt;/div&gt;</code
+                        >, usado en todas las páginas del sitio.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading-table">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse-table"
+                      aria-expanded="false"
+                      aria-controls="collapse-table"
+                    >
+                      &lt;table&gt;
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse-table"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading-table"
+                    data-bs-parent="#accordionComunes"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        <strong>Cuándo usarla:</strong> exclusivamente para
+                        datos tabulares reales (filas y columnas comparables),
+                        nunca para maquetar el layout de la página.
+                      </p>
+                      <p>
+                        <strong>Ejemplo de aplicación:</strong> una tabla
+                        comparativa de las etiquetas semánticas explicadas en la
+                        Sección 1 (nombre, propósito, página donde se usa).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading-form">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse-form"
+                      aria-expanded="false"
+                      aria-controls="collapse-form"
+                    >
+                      &lt;form&gt;, &lt;label&gt;, &lt;input&gt; y
+                      &lt;button&gt;
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse-form"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading-form"
+                    data-bs-parent="#accordionComunes"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        <strong>Cuándo usarla:</strong>
+                        <code>&lt;form&gt;</code> agrupa campos de entrada de
+                        datos; cada <code>&lt;input&gt;</code> debe llevar su
+                        <code>&lt;label&gt;</code> asociado (con
+                        <code>for</code>/<code>id</code>) por accesibilidad;
+                        <code>&lt;button&gt;</code> dispara acciones (enviar,
+                        resetear, o eventos JS).
+                      </p>
+                      <pre class="bg-light p-3 rounded"><code>&lt;form&gt;
+    &lt;label for="nombre"&gt;Nombre&lt;/label&gt;
+    &lt;input type="text" id="nombre" name="nombre" class="form-control"&gt;
+    &lt;button type="submit" class="btn btn-outline-dark"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+                      <p>
+                        <strong>Ejemplo de aplicación:</strong> podría usarse en
+                        un futuro formulario de contacto en
+                        <code>index.html</code>, con botones estilizados como
+                        <code>.btn-outline-dark</code> igual que el resto del
+                        sitio.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bootstrap 5.3.0 JS (necesario para navbar colapsable, tabs y acordeón) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
