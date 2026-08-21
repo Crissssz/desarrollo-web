@@ -154,6 +154,7 @@ h5,
 /* =========================================
    TEMA VINTAGE 2007 "SANGRIENTO" (solo investigacion_html.html)
    ========================================= */
+html.fondo-vintage,
 body.fondo-vintage {
   background-color: #1a0505;
   background-image:
@@ -181,6 +182,7 @@ body.fondo-vintage {
   background-size: 200px 150px;
   background-attachment: fixed;
   font-family: "Nunito", sans-serif;
+  min-height: 100%;
 }
 
 /* --- Texto y títulos --- */
