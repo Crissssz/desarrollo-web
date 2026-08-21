@@ -8,4 +8,4 @@
 | Cristóbal Garrido  | Git Manager & Contenedores   |
 | Damon Murray       | QA & Desarrollador Front-end |
 | Nicolás Contreras  | Scrum Master                 |
-| Ítalo Osorio       | Desarrollador Back-end       |
+| Ítalo Osorio       | Desarrollador HTML           |
