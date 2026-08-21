@@ -1,7 +1,106 @@
-/* Escala personalizada Lila-Celeste para badges */
-    .tech-badge { font-size: 1rem; padding: 10px 15px; margin: 5px; color: #2d3748 !important; border-radius: 8px; }
-    .bg-tech-html { background-color: #B3E0FF; } /* Celeste fuerte */
-    .bg-tech-css { background-color: #BDE0FA; }  /* Celeste suave */
-    .bg-tech-boot { background-color: #C8D5F6; } /* Transición azulada */
-    .bg-tech-nginx { background-color: #D3CAF2; } /* Lila suave */
-    .bg-tech-docker { background-color: #DDBEEE; } /* Lila intenso */
+/* =========================================
+   ESTILOS GLOBALES Y FONDOS
+   ========================================= */
+html, body {
+    /* Aquí llamamos a la imagen. Los dos puntos (..) le dicen al CSS que salga 
+       de su carpeta y busque en la carpeta imágenes */
+    background-image: url('../imágenes/frutiger-aqua.jpg');
+    
+    /* Ajustes obligatorios para que la foto se vea bien */
+    background-size: cover; /* Fuerza a la imagen a cubrir toda la pantalla sin deformarse */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Congela el fondo */
+    cursor: url('../imágenes/burbuja2.png'), auto;
+    a, .btn, .card {
+    /* Muestra la manito al pasar sobre elementos como botones*/
+    cursor: pointer; 
+}
+    
+    /* Color de respaldo por si la imagen tarda en cargar */
+    background-color: #DFF2FE; 
+    
+    font-family: 'Nunito', sans-serif; 
+}
+
+/* Fuente retro exclusiva para los títulos principales y nombres */
+h1, h2, h3, h4, h5, .card-title, .retro-title {
+    font-family: 'DotGothic16', sans-serif;
+}
+
+/* =========================================
+   TARJETAS Y CRISTAL ESMERILADO (Glassmorphism)
+   ========================================= */
+.card {
+    background: rgba(255, 255, 255, 0.4) !important; /* Blanco semitransparente */
+    backdrop-filter: blur(12px); /* El efecto de cristal borroso */
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.8) !important; /* Borde brillante */
+    border-radius: 15px; 
+    /* Sombra suave por fuera y un brillo blanco por dentro */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1), inset 0 0 15px rgba(255, 255, 255, 0.6);
+    transition: transform 0.2s; 
+}
+
+.card:hover {
+    transform: scale(1.05); 
+    background: rgba(255, 255, 255, 0.5) !important; /* Se aclara un poco al pasar el mouse */
+}
+
+/* Subtítulos (Roles) con Nunito en negrita */
+.card-subtitle {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #4a5568 !important;
+}
+
+/* Centrado perfecto dentro de las tarjetas */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========================================
+   BOTONES BRILLANTES (Glossy)
+   ========================================= */
+.btn-outline-dark {
+    background: linear-gradient(180deg, #ffffff 0%, #DFF2FE 50%, #B3E0FF 100%) !important;
+    border: 1px solid #73C2FB !important;
+    border-radius: 20px;
+    color: #2d3748 !important;
+    font-weight: bold;
+    box-shadow: inset 0 2px 2px rgba(255,255,255,0.9), 0 4px 6px rgba(0,0,0,0.05);
+    transition: all 0.2s;
+}
+
+.btn-outline-dark:hover {
+    background: linear-gradient(180deg, #ffffff 0%, #E6E6FA 50%, #D3CAF2 100%) !important; /* Cambia a lila */
+    box-shadow: inset 0 2px 2px rgba(255,255,255,0.9), 0 6px 8px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   ESCALA LILA-CELESTE PARA BADGES
+   ========================================= */
+.tech-badge { font-size: 1rem; padding: 10px 15px; margin: 5px; color: #2d3748 !important; border-radius: 8px; }
+.bg-tech-html { background-color: #B3E0FF; } /* Celeste fuerte */
+.bg-tech-css { background-color: #BDE0FA; }  /* Celeste suave */
+.bg-tech-boot { background-color: #C8D5F6; } /* Transición azulada */
+.bg-tech-nginx { background-color: #D3CAF2; } /* Lila suave */
+.bg-tech-docker { background-color: #DDBEEE; } /* Lila intenso */
+
+/* =========================================
+   CONTENEDOR DE IMAGEN SIMULADA
+   ========================================= */
+.img-placeholder { 
+    background-color: rgba(255, 255, 255, 0.4); 
+    border: 2px dashed #73C2FB; 
+    border-radius: 10px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: #4a5568; 
+    backdrop-filter: blur(5px);
+}
