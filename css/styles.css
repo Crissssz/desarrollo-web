@@ -2,10 +2,6 @@
    ESTILOS GLOBALES Y FONDOS
    ========================================= */
 html, body {
-    /* Aquí llamamos a la imagen. Los dos puntos (..) le dicen al CSS que salga 
-       de su carpeta y busque en la carpeta imágenes */
-    background-image: url('../imágenes/frutiger-aqua.jpg');
-    
     /* Ajustes obligatorios para que la foto se vea bien */
     background-size: cover; /* Fuerza a la imagen a cubrir toda la pantalla sin deformarse */
     background-position: center; /* Centra la imagen */
@@ -14,6 +10,25 @@ html, body {
     a, .btn, .card {
     /* Muestra la manito al pasar sobre elementos como botones*/
     cursor: pointer; 
+}
+
+/* =========================================
+   FONDOS POR SECCIÓN
+   ========================================= */
+
+/* Único para el inicio */
+.bg-principal {
+    background-image: url('../imágenes/fondo-inicio.jpg');
+}
+
+/* Plantilla para todo lo relacionado al Equipo */
+.bg-seccion-equipo {
+    background-image: url('../imágenes/fondo-integrantes.jpg');
+}
+
+/* Plantilla para todo el material de Investigación */
+.bg-seccion-investigacion {
+    background-image: url('../imágenes/fondo-contenidos.jpg');
 }
     
     /* Color de respaldo por si la imagen tarda en cargar */
