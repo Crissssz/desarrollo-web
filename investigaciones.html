@@ -15,105 +15,136 @@
 
     <!-- CSS personalizado -->
     <link rel="stylesheet" href="css/styles.css">
-</head>
 
-<body class="bg-seccion-investigacion">
-    <div class="container py-5">
-        <h1 class="text-center mb-4">Bienvenido a Nuestras Investigaciones</h1>
-        <p class="text-center mb-5">Explora nuestras investigaciones sobre tecnologías web y contenedores.</p>
 
-        <!-- Fila de Tarjetas -->
-        <div class="row text-center justify-content-center">
-            
-        <!-- Tarjeta 1: Docker -->
-        <div class="col-md-4 mb-4">
-            <!-- El enlace envuelve a la tarjeta. 
-                 text-decoration-none evita que el texto se subraye -->
-            <a href="investigacion_docker.html" class="text-decoration-none">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h3 class="card-title">Docker</h3>
-                        <h6 class="card-subtitle mb-3 text-muted">Introducción</h6>
-                        <p class="card-text"> y ejemplos</p>
-                    </div>
-                </div>
-            </a>
-        </div><!-- Tarjeta 2: Comandos Docker -->
-        <div class="col-md-4 mb-4">
-            <!-- El enlace envuelve a la tarjeta. 
-                 text-decoration-none evita que el texto se subraye -->
-            <a href="investigacion_comandos_docker.html" class="text-decoration-none">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h3 class="card-title">Comandos Docker</h3>
-                        <h6 class="card-subtitle mb-3 text-muted">Introducción</h6>
-                        <p class="card-text"> y ejemplos</p>
-                    </div>
-                </div>
-            </a>
+  <body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand retro-title" href="index.html"
+          >Los Contenedores Web</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="integrantes.html">Integrantes</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="investigaciones.html"
+                >Investigaciones</a
+              >
+            </li>
+          </ul>
         </div>
-        <!-- Tarjeta 3: CSS -->
-        <div class="col-md-4 mb-4">
-            <!-- El enlace envuelve a la tarjeta. 
-                 text-decoration-none evita que el texto se subraye -->
-            <a href="investigacion_css.html" class="text-decoration-none">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h3 class="card-title">CSS</h3>
-                        <h6 class="card-subtitle mb-3 text-muted">Introducción</h6>
-                        <p class="card-text"> y ejemplos</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <!-- Tarjeta 4: Bootstrap -->
-        <div class="col-md-4 mb-4">
-            <!-- El enlace envuelve a la tarjeta. 
-                 text-decoration-none evita que el texto se subraye -->
-            <a href="investigacion_bootstrap.html" class="text-decoration-none">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h3 class="card-title">Bootstrap</h3>
-                        <h6 class="card-subtitle mb-3 text-muted">Introducción</h6>
-                        <p class="card-text"> y ejemplos</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <!-- Tarjeta 5: Etiquetas semánticas HTML -->
-        <div class="col-md-4 mb-4">
-            <!-- El enlace envuelve a la tarjeta. 
-                 text-decoration-none evita que el texto se subraye -->
-            <a href="investigacion_etiquetas_semanticas.html" class="text-decoration-none">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h3 class="card-title">Etiquetas semánticas HTML</h3>
-                        <h6 class="card-subtitle mb-3 text-muted">Introducción</h6>
-                        <p class="card-text"> y ejemplos</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <!-- Tarjeta 6: Etiquetas uso común -->
-        <div class="col-md-4 mb-4">
-            <!-- El enlace envuelve a la tarjeta. 
-                 text-decoration-none evita que el texto se subraye -->
-            <a href="investigacion_etiquetas_uso_comun.html" class="text-decoration-none">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h3 class="card-title">Etiquetas uso común</h3>
-                        <h6 class="card-subtitle mb-3 text-muted">Introducción</h6>
-                        <p class="card-text"> y ejemplos</p>
-                    </div>
-                </div>
-            </a>
+      </div>
+    </nav>
+
+    <!-- Encabezado Principal -->
+    <header class="container text-center my-5">
+      <h1 class="display-4 retro-title">Investigaciones</h1>
+      <p class="lead">
+        Índice temático con la investigación realizada por el equipo en cada
+        tecnología del proyecto.
+      </p>
+    </header>
+
+    <main class="container">
+      <section class="row mb-5">
+        <!-- Docker: instalación -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 p-4 shadow-sm">
+            <h2>Docker</h2>
+            <p>
+              Qué es Docker Desktop, requisitos de instalación en Windows y
+              evidencia de la ejecución del comando <code>hello-world</code>.
+            </p>
+            <a
+              href="docker-instalacion.html"
+              class="btn btn-outline-dark mt-auto"
+              >Ver investigación</a
+            >
+          </div>
         </div>
 
+        <!-- Comandos Docker -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 p-4 shadow-sm">
+            <h2>Comandos Docker</h2>
+            <p>
+              Sintaxis, descripción y ejemplos de los comandos Docker más usados
+              en el proyecto.
+            </p>
+            <a href="docker-comandos.html" class="btn btn-outline-dark mt-auto"
+              >Ver investigación</a
+            >
+          </div>
         </div>
-                    <!-- Botón abajo para volver -->
-        <div class="text-center mt-4">
-            <a href="index.html" class="btn btn-outline-dark btn-lg">Volver al inicio</a>
+
+        <!-- CSS -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 p-4 shadow-sm">
+            <h2>CSS</h2>
+            <p>
+              Definición, formas de aplicar CSS, selectores, clases,
+              identificadores y el modelo de caja.
+            </p>
+            <a
+              href="investigacion_css.html"
+              class="btn btn-outline-dark mt-auto"
+              >Ver investigación</a
+            >
+          </div>
         </div>
-    </div>
-</body> 
+
+        <!-- Bootstrap -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 p-4 shadow-sm">
+            <h2>Bootstrap</h2>
+            <p>
+              Qué es Bootstrap, diseño responsivo, sistema de grillas y
+              componentes usados en el sitio.
+            </p>
+            <a href="bootstrap.html" class="btn btn-outline-dark mt-auto"
+              >Ver investigación</a
+            >
+          </div>
+        </div>
+
+        <!-- Etiquetas HTML (semánticas + uso común) -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 p-4 shadow-sm">
+            <h2>Etiquetas HTML</h2>
+            <p>
+              Etiquetas semánticas (header, nav, main, section, article, aside,
+              footer) y etiquetas de uso común (encabezados, párrafos, enlaces,
+              imágenes, listas, tablas, formularios), con ejemplos de aplicación
+              en el sitio.
+            </p>
+            <a
+              href="investigacion_html.html"
+              class="btn btn-outline-dark mt-auto"
+              >Ver investigación</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
