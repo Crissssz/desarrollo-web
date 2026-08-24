@@ -1,66 +1,80 @@
 /* =========================================
-   ESTILOS GLOBALES - MINIMALISTA
+   ESTILOS GLOBALES - MINIMALISTA RETRO
    ========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
 html, body {
     background-color: #fafafa;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     color: #1a1a1a;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 /* =========================================
-   NAVBAR MINIMALISTA
+   NAVBAR MINIMALISTA CON BURBUJAS
    ========================================= */
 .navbar {
     background: rgba(255, 255, 255, 0.95) !important;
     backdrop-filter: blur(10px);
     border-bottom: 1px solid #e5e5e5;
-    padding: 0.8rem 0;
+    padding: 1rem 0;
 }
 
 .navbar-brand {
-    font-family: "DotGothic16", sans-serif;
-    font-size: 1.2rem;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.1rem;
     color: #1a1a1a !important;
-    font-weight: bold;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.nav-links {
+    background: #f0f0f0;
+    border-radius: 50px;
+    padding: 5px;
+    display: inline-flex;
+    gap: 4px;
 }
 
 .navbar-nav .nav-link {
     color: #555 !important;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    font-weight: 500;
     padding: 0.5rem 1rem !important;
-    border-radius: 6px;
+    border-radius: 50px;
     transition: all 0.2s ease;
-    margin-right: 0.25rem;
 }
 
 .navbar-nav .nav-link:hover {
     color: #1a1a1a !important;
-    background: #f0f0f0;
+    background: #e0e0e0;
 }
 
 .navbar-nav .nav-link.active {
-    color: #1a1a1a !important;
-    background: #e8e8e8;
-    font-weight: 600;
+    color: #fff !important;
+    background: #1a1a1a;
 }
 
 /* =========================================
    TIPOGRAFÍA
    ========================================= */
-h1, h2, h3, h4, h5 {
-    font-family: "DotGothic16", sans-serif;
+h1, h2, h3, h4, h5, .retro-title {
+    font-family: 'Space Mono', monospace;
     color: #1a1a1a;
-    font-weight: normal;
+    font-weight: 700;
+    letter-spacing: -0.5px;
 }
 
-.retro-title {
-    font-family: "DotGothic16", sans-serif;
-}
-
-p, li, span {
+p, li, span, td, th {
     color: #333;
+    font-family: 'Inter', sans-serif;
+}
+
+code {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.85em;
 }
 
 /* =========================================
@@ -69,13 +83,13 @@ p, li, span {
 .card {
     background: #fff !important;
     border: 1px solid #e5e5e5 !important;
-    border-radius: 12px;
+    border-radius: 16px;
     transition: all 0.2s ease;
 }
 
 .card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 /* =========================================
@@ -85,8 +99,9 @@ p, li, span {
     background: #1a1a1a !important;
     border: 1px solid #1a1a1a !important;
     color: #fff !important;
-    border-radius: 8px;
+    border-radius: 50px;
     font-weight: 500;
+    font-size: 0.85rem;
     padding: 0.5rem 1.25rem;
     transition: all 0.2s ease;
 }
@@ -109,11 +124,12 @@ p, li, span {
    ========================================= */
 .tech-badge {
     font-size: 0.85rem;
-    padding: 8px 12px;
+    padding: 8px 14px;
     margin: 4px;
     color: #1a1a1a !important;
-    border-radius: 6px;
+    border-radius: 50px;
     font-weight: 500;
+    font-family: 'Space Mono', monospace;
 }
 
 .bg-tech-html { background-color: #e3f2fd; }
@@ -133,6 +149,7 @@ p, li, span {
     align-items: center;
     justify-content: center;
     color: #999;
+    font-family: 'Space Mono', monospace;
 }
 
 /* =========================================
@@ -149,11 +166,12 @@ footer p {
     margin: 0;
     color: #666;
     font-size: 0.9rem;
+    font-family: 'Space Mono', monospace;
 }
 
 footer small {
     color: #999;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
 }
 
 /* =========================================
@@ -177,6 +195,7 @@ section {
    ========================================= */
 .table {
     border-color: #e5e5e5;
+    font-size: 0.9rem;
 }
 
 .table-dark {
@@ -186,19 +205,13 @@ section {
 /* =========================================
    CÓDIGO
    ========================================= */
-code {
-    background: #f5f5f5;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-size: 0.9em;
-    color: #c7254e;
-}
-
 pre {
     background: #1a1a1a !important;
     color: #f0f0f0 !important;
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 1rem;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.8rem;
 }
 
 /* =========================================
@@ -216,11 +229,15 @@ pre {
 .accordion-item {
     background: #fff !important;
     border-color: #e5e5e5 !important;
+    border-radius: 12px !important;
 }
 
 .accordion-button {
     background: #fafafa !important;
     color: #1a1a1a !important;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    border-radius: 12px;
 }
 
 .accordion-button:not(.collapsed) {
@@ -247,6 +264,8 @@ pre {
     color: #666 !important;
     background: transparent !important;
     border: 1px solid transparent;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
 }
 
 .nav-tabs .nav-link.active {
@@ -274,7 +293,7 @@ body.fondo-vintage {
     background-repeat: repeat;
     background-size: 200px 150px;
     background-attachment: fixed;
-    font-family: "Nunito", sans-serif;
+    font-family: 'Inter', sans-serif;
     min-height: 100%;
 }
 
@@ -324,12 +343,16 @@ body.fondo-vintage .nav-link {
 }
 
 body.fondo-vintage .nav-link.active {
-    color: #ff5c5c !important;
-    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.15);
 }
 
 body.fondo-vintage .navbar-toggler-icon {
     filter: invert(1);
+}
+
+body.fondo-vintage .nav-links {
+    background: rgba(255, 255, 255, 0.1);
 }
 
 body.fondo-vintage .card {
@@ -421,4 +444,21 @@ body.fondo-vintage footer {
 body.fondo-vintage footer p,
 body.fondo-vintage footer small {
     color: #e07a7a;
+}
+
+body.fondo-vintage .table {
+    color: #e8d5d5 !important;
+    border-color: rgba(165, 47, 47, 0.5) !important;
+}
+
+body.fondo-vintage .table-dark {
+    background: rgba(45, 5, 5, 0.9) !important;
+}
+
+body.fondo-vintage th {
+    color: #f0c0c0 !important;
+}
+
+body.fondo-vintage td {
+    color: #e8d5d5 !important;
 }
