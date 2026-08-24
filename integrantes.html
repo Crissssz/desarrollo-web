@@ -15,81 +15,113 @@
     
     <!-- CSS personalizado -->
     <link rel="stylesheet" href="css/styles.css">
-
 </head>
 
 <body class="bg-seccion-equipo">
-    <div class="container py-5">
-        <h1 class="text-center mb-4">Bienvenido</h1>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand retro-title" href="index.html">Los Contenedores Web</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" href="integrantes.html">Integrantes</a></li>
+            <li class="nav-item"><a class="nav-link" href="investigaciones.html">Investigaciones</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1 class="text-center mb-4 retro-title">Integrantes del Equipo</h1>
         <p class="text-center mb-5">Explora nuestro equipo y nuestras investigaciones en desarrollo web.</p>
 
         <!-- Fila de Tarjetas -->
         <div class="row text-center justify-content-center">
             
-        <!-- Tarjeta 1: Damon -->
-        <div class="col-md-4 mb-4">
-            <!-- El enlace envuelve a la tarjeta. 
-                 text-decoration-none evita que el texto se subraye -->
-            <a href="Damon_Murray.html" class="text-decoration-none">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h3 class="card-title">Damon Murray</h3>
-                        <h6 class="card-subtitle mb-3 text-muted">QA & Desarrollador Front-end</h6>
-                        <p class="card-text">Especialista en QA, diseño web y CSS.</p>
+            <!-- Tarjeta 1: Damon -->
+            <div class="col-md-4 mb-4">
+                <a href="pages/Damon_Murray.html" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title retro-title">Damon Murray</h3>
+                            <h6 class="card-subtitle mb-3 text-muted">QA & Desarrollador Front-end</h6>
+                            <p class="card-text">Especialista en QA, diseño web y CSS.</p>
+                            <span class="btn btn-outline-dark btn-sm">Ver Perfil</span>
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>      
+                </a>
+            </div>      
 
             <!-- Tarjeta 2: Nicolás -->
             <div class="col-md-4 mb-4">
                 <div class="card h-100 shadow-sm">
                     <div class="card-body">
-                        <h3 class="card-title">Nicolás Contreras</h3>
+                        <h3 class="card-title retro-title">Nicolás Contreras</h3>
                         <h6 class="card-subtitle mb-3 text-muted">Scrum Master</h6>
                         <p class="card-text">Encargado de la gestión de tareas, historias de usuario y reflexiones del equipo.</p>
+                        <span class="btn btn-outline-dark btn-sm disabled">Próximamente</span>
                     </div>
                 </div>
             </div>
 
             <!-- Tarjeta 3: Cristóbal -->
             <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h3 class="card-title">Cristóbal Garrido</h3>
-                        <h6 class="card-subtitle mb-3 text-muted">Git Manager & Contenedores</h6>
-                        <p class="card-text">Responsable del control de versiones, entorno de Docker y despliegue en Nginx.</p>
+                <a href="pages/cristobal.html" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title retro-title">Cristóbal Garrido</h3>
+                            <h6 class="card-subtitle mb-3 text-muted">Git Manager & Contenedores</h6>
+                            <p class="card-text">Responsable del control de versiones, entorno de Docker y despliegue en Nginx.</p>
+                            <span class="btn btn-outline-dark btn-sm">Ver Perfil</span>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
 
             <!-- Tarjeta 4: Ítalo -->
             <div class="col-md-4 mb-4">
                 <div class="card h-100 shadow-sm">
                     <div class="card-body">
-                        <h3 class="card-title">Ítalo Osorio</h3>
+                        <h3 class="card-title retro-title">Ítalo Osorio</h3>
                         <h6 class="card-subtitle mb-3 text-muted">Desarrollador HTML</h6>
                         <p class="card-text">Especialista en semántica web, etiquetas de uso común y barra de navegación.</p>
+                        <span class="btn btn-outline-dark btn-sm disabled">Próximamente</span>
                     </div>
                 </div>
             </div>
 
             <!-- Tarjeta 5: Benjamín -->
             <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h3 class="card-title">Benjamín Contreras</h3>
-                        <h6 class="card-subtitle mb-3 text-muted">Desarrollador Back-end</h6>
-                        <p class="card-text">Encargado de la página de integrantes y la documentación de comandos de Docker.</p>
+                <a href="pages/benjamin.html" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title retro-title">Benjamín Contreras</h3>
+                            <h6 class="card-subtitle mb-3 text-muted">Desarrollador Back-end</h6>
+                            <p class="card-text">Encargado de la página de integrantes y la documentación de comandos de Docker.</p>
+                            <span class="btn btn-outline-dark btn-sm">Ver Perfil</span>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
 
         </div>
-                    <!-- Botón abajo para volver -->
+
+        <!-- Botón para volver -->
         <div class="text-center mt-4">
             <a href="index.html" class="btn btn-outline-dark btn-lg">Volver al inicio</a>
         </div>
     </div>
+
+    <footer>
+      <div class="container">
+        <p class="mb-1 retro-title">Los Contenedores Web</p>
+        <small>Proyecto de Desarrollo Web - HTML, CSS, Bootstrap, Docker y Nginx</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body> 
 </html>
