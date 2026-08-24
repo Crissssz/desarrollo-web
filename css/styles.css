@@ -1,68 +1,37 @@
 /* =========================================
-   ESTILOS GLOBALES - MINIMALISTA RETRO
+   ESTILOS GLOBALES Y FONDOS
    ========================================= */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap");
-
 html,
 body {
-  background-color: #fafafa;
-  font-family:
-    "Inter",
-    -apple-system,
-    BlinkMacSystemFont,
-    sans-serif;
-  color: #1a1a1a;
+  background-color: #dff2fe;
+  font-family: "Nunito", sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  cursor: url("../imágenes/burbuja2.png"), auto;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+}
+
+a,
+.btn,
+.card {
+  cursor: pointer;
 }
 
 /* =========================================
-   NAVBAR MINIMALISTA CON BURBUJAS
+   FONDOS POR SECCIÓN (clase en <body>)
    ========================================= */
-.navbar {
-  background: rgba(255, 255, 255, 0.95) !important;
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid #e5e5e5;
-  padding: 1rem 0;
+.bg-principal {
+  background-image: url("../imágenes/fondo-inicio.jpg");
 }
 
-.navbar-brand {
-  font-family: "Space Mono", monospace;
-  font-size: 1.1rem;
-  color: #1a1a1a !important;
-  font-weight: 700;
-  letter-spacing: -0.5px;
+.bg-seccion-equipo {
+  background-image: url("../imágenes/fondo-integrantes.jpg");
 }
 
-.nav-links {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-
-.nav-links .nav-link,
-.navbar-brand {
-  color: #555 !important;
-  font-size: 0.85rem;
-  font-weight: 500;
-  padding: 0.5rem 1rem !important;
-  border-radius: 50px;
-  background: #f0f0f0;
-  transition: all 0.2s ease;
-  display: inline-block;
-  text-decoration: none;
-}
-
-.nav-links .nav-link:hover,
-.navbar-brand:hover {
-  color: #1a1a1a !important;
-  background: #e0e0e0;
-}
-
-.nav-links .nav-link.active {
-  color: #fff !important;
-  background: #1a1a1a;
+.bg-seccion-investigacion {
+  background-image: url("../imágenes/fondo-contenidos.jpg");
 }
 
 /* =========================================
@@ -73,11 +42,10 @@ h2,
 h3,
 h4,
 h5,
-.retro-title {
-  font-family: "Space Mono", monospace;
-  color: #1a1a1a;
-  font-weight: 700;
-  letter-spacing: -0.5px;
+.card-title,
+.retro-title,
+.navbar-brand {
+  font-family: "DotGothic16", sans-serif;
 }
 
 p,
@@ -85,48 +53,127 @@ li,
 span,
 td,
 th {
+  font-family: "Nunito", sans-serif;
   color: #333;
-  font-family: "Inter", sans-serif;
 }
 
 code {
-  font-family: "Space Mono", monospace;
+  font-family: "Nunito", monospace;
   font-size: 0.85em;
 }
 
 /* =========================================
-   TARJETAS MINIMALISTAS
+   NAVBAR MINIMALISTA CON BURBUJAS
    ========================================= */
-.card {
-  background: #fff !important;
-  border: 1px solid #e5e5e5 !important;
-  border-radius: 16px;
-  transition: all 0.2s ease;
+.navbar {
+  background: rgba(255, 255, 255, 0.5) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 1rem 0;
 }
 
-.card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+.navbar-brand {
+  font-size: 1.2rem;
+  color: #2d3748 !important;
+}
+
+.nav-links {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.nav-links .nav-link {
+  font-family: "Nunito", sans-serif;
+  color: #4a5568 !important;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.5rem 1.1rem !important;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(115, 194, 251, 0.4);
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.nav-links .nav-link:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: #2d3748 !important;
+}
+
+.nav-links .nav-link.active {
+  color: #fff !important;
+  background: linear-gradient(180deg, #73c2fb 0%, #4a90e2 100%);
+  border-color: #73c2fb;
 }
 
 /* =========================================
-   BOTONES MINIMALISTAS
+   TARJETAS Y CRISTAL ESMERILADO (Glassmorphism)
+   ========================================= */
+.card {
+  background: rgba(255, 255, 255, 0.4) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.8) !important;
+  border-radius: 15px;
+  box-shadow:
+    0 8px 32px 0 rgba(31, 38, 135, 0.1),
+    inset 0 0 15px rgba(255, 255, 255, 0.6);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  background: rgba(255, 255, 255, 0.5) !important;
+}
+
+.card-subtitle {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #4a5568 !important;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =========================================
+   BOTONES BRILLANTES (Glossy)
    ========================================= */
 .btn-outline-dark {
-  background: #1a1a1a !important;
-  border: 1px solid #1a1a1a !important;
-  color: #fff !important;
-  border-radius: 50px;
-  font-weight: 500;
-  font-size: 0.85rem;
-  padding: 0.5rem 1.25rem;
-  transition: all 0.2s ease;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #dff2fe 50%,
+    #b3e0ff 100%
+  ) !important;
+  border: 1px solid #73c2fb !important;
+  border-radius: 20px;
+  color: #2d3748 !important;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  box-shadow:
+    inset 0 2px 2px rgba(255, 255, 255, 0.9),
+    0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s;
 }
 
 .btn-outline-dark:hover {
-  background: #333 !important;
-  border-color: #333 !important;
-  transform: translateY(-1px);
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #e6e6fa 50%,
+    #d3caf2 100%
+  ) !important;
+  box-shadow:
+    inset 0 2px 2px rgba(255, 255, 255, 0.9),
+    0 6px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
 }
 
 .btn-outline-dark.disabled,
@@ -137,138 +184,115 @@ code {
 }
 
 /* =========================================
-   BADGES
+   ESCALA LILA-CELESTE PARA BADGES
    ========================================= */
 .tech-badge {
-  font-size: 0.85rem;
-  padding: 8px 14px;
-  margin: 4px;
-  color: #1a1a1a !important;
-  border-radius: 50px;
-  font-weight: 500;
-  font-family: "Space Mono", monospace;
+  font-size: 1rem;
+  padding: 10px 15px;
+  margin: 5px;
+  color: #2d3748 !important;
+  border-radius: 8px;
+  font-family: "Nunito", sans-serif;
 }
-
 .bg-tech-html {
-  background-color: #e3f2fd;
+  background-color: #b3e0ff;
 }
 .bg-tech-css {
-  background-color: #e8f5e9;
+  background-color: #bde0fa;
 }
 .bg-tech-boot {
-  background-color: #f3e5f5;
+  background-color: #c8d5f6;
 }
 .bg-tech-nginx {
-  background-color: #fff3e0;
+  background-color: #d3caf2;
 }
 .bg-tech-docker {
-  background-color: #e0f7fa;
+  background-color: #ddbeee;
 }
 
 /* =========================================
-   IMAGEN PLACEHOLDER
+   PLACEHOLDER DE IMAGEN
    ========================================= */
 .img-placeholder {
-  background-color: #f5f5f5;
-  border: 2px dashed #ddd;
-  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 2px dashed #73c2fb;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #999;
-  font-family: "Space Mono", monospace;
+  color: #4a5568;
+  backdrop-filter: blur(5px);
 }
 
 /* =========================================
-   FOOTER MINIMALISTA
+   FOOTER
    ========================================= */
 footer {
-  background: #fafafa;
-  border-top: 1px solid #e5e5e5;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
   padding: 1.5rem 0;
   margin-top: 3rem;
 }
 
 footer p {
   margin: 0;
-  color: #666;
+  color: #4a5568;
   font-size: 0.9rem;
-  font-family: "Space Mono", monospace;
+  font-family: "Nunito", sans-serif;
 }
 
 footer small {
-  color: #999;
-  font-size: 0.75rem;
+  color: #718096;
+  font-size: 0.8rem;
 }
 
 /* =========================================
-   CONTENIDO PRINCIPAL
+   CONTENIDO PRINCIPAL / TABLAS / CÓDIGO
    ========================================= */
 .container {
   max-width: 1100px;
 }
 
-header.container {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-section {
-  margin-bottom: 3rem;
-}
-
-/* =========================================
-   TABLAS
-   ========================================= */
 .table {
-  border-color: #e5e5e5;
+  border-color: rgba(115, 194, 251, 0.4);
   font-size: 0.9rem;
 }
 
 .table-dark {
-  background: #1a1a1a !important;
+  background: rgba(45, 55, 72, 0.9) !important;
 }
 
-/* =========================================
-   CÓDIGO
-   ========================================= */
 pre {
-  background: #1a1a1a !important;
+  background: rgba(45, 55, 72, 0.95) !important;
   color: #f0f0f0 !important;
   border-radius: 12px;
   padding: 1rem;
-  font-family: "Space Mono", monospace;
+  font-family: "Nunito", monospace;
   font-size: 0.8rem;
 }
 
-/* =========================================
-   LISTAS
-   ========================================= */
 .list-group-item {
-  background: #fff !important;
-  border-color: #e5e5e5 !important;
+  background: rgba(255, 255, 255, 0.4) !important;
+  border-color: rgba(115, 194, 251, 0.4) !important;
   color: #333 !important;
 }
 
-/* =========================================
-   ACORDEÓN
-   ========================================= */
 .accordion-item {
-  background: #fff !important;
-  border-color: #e5e5e5 !important;
+  background: rgba(255, 255, 255, 0.4) !important;
+  border-color: rgba(115, 194, 251, 0.4) !important;
   border-radius: 12px !important;
 }
 
 .accordion-button {
-  background: #fafafa !important;
-  color: #1a1a1a !important;
-  font-family: "Space Mono", monospace;
-  font-weight: 700;
+  background: rgba(255, 255, 255, 0.6) !important;
+  color: #2d3748 !important;
+  font-family: "DotGothic16", sans-serif;
   border-radius: 12px;
 }
 
 .accordion-button:not(.collapsed) {
-  background: #f0f0f0 !important;
+  background: rgba(255, 255, 255, 0.8) !important;
 }
 
 .accordion-button::after {
@@ -276,34 +300,29 @@ pre {
 }
 
 .accordion-body {
-  background: #fff !important;
+  background: rgba(255, 255, 255, 0.3) !important;
   color: #333 !important;
 }
 
-/* =========================================
-   NAV TABS
-   ========================================= */
 .nav-tabs {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid rgba(115, 194, 251, 0.4);
 }
 
 .nav-tabs .nav-link {
-  color: #666 !important;
+  color: #4a5568 !important;
   background: transparent !important;
   border: 1px solid transparent;
-  font-family: "Space Mono", monospace;
-  font-weight: 700;
+  font-family: "DotGothic16", sans-serif;
 }
 
 .nav-tabs .nav-link.active {
-  color: #1a1a1a !important;
-  background: #fff !important;
-  border: 1px solid #e5e5e5 !important;
-  border-bottom-color: #fff !important;
+  color: #2d3748 !important;
+  background: rgba(255, 255, 255, 0.6) !important;
+  border: 1px solid rgba(115, 194, 251, 0.4) !important;
 }
 
 /* =========================================
-   TEMA VINTAGE (investigacion_html.html)
+   TEMA VINTAGE 2007 "SANGRIENTO" (solo html-semantico.html / etiquetas-html.html)
    ========================================= */
 html.fondo-vintage,
 body.fondo-vintage {
@@ -332,8 +351,9 @@ body.fondo-vintage {
   background-repeat: repeat;
   background-size: 200px 150px;
   background-attachment: fixed;
-  font-family: "Inter", sans-serif;
+  font-family: "Nunito", sans-serif;
   min-height: 100%;
+  cursor: auto;
 }
 
 body.fondo-vintage h1,
@@ -344,78 +364,72 @@ body.fondo-vintage .retro-title {
   color: #d94848 !important;
   text-shadow: 1px 1px 2px #000;
 }
-
 body.fondo-vintage p,
 body.fondo-vintage li,
 body.fondo-vintage .lead {
   color: #e8d5d5 !important;
 }
-
 body.fondo-vintage a {
   color: #e07a7a;
 }
-
 body.fondo-vintage a:hover {
   color: #ff9999;
 }
-
 body.fondo-vintage code {
   background-color: #2a0a0a !important;
   color: #ff8080 !important;
   border: 1px solid #6e0d0d;
 }
-
 body.fondo-vintage pre {
   background-color: #150404 !important;
   color: #e8d5d5 !important;
   border: 1px solid #6e0d0d;
 }
-
 body.fondo-vintage .navbar {
   background-color: #0d0202 !important;
   border-bottom: 1px solid #6e0d0d;
+  backdrop-filter: none;
 }
-
 body.fondo-vintage .navbar-brand,
 body.fondo-vintage .nav-link {
   color: #e07a7a !important;
 }
-
+body.fondo-vintage .nav-links .nav-link {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(165, 47, 47, 0.4);
+}
 body.fondo-vintage .nav-link.active {
   color: #ffffff !important;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(165, 47, 47, 0.3) !important;
 }
-
 body.fondo-vintage .navbar-toggler-icon {
   filter: invert(1);
 }
-
-body.fondo-vintage .nav-links {
-  background: rgba(255, 255, 255, 0.1);
-}
-
 body.fondo-vintage .card {
   background: rgba(20, 5, 5, 0.8) !important;
   color: #e8d5d5 !important;
   border: 1px solid rgba(165, 47, 47, 0.5) !important;
+  backdrop-filter: none !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6) !important;
 }
-
 body.fondo-vintage .btn-outline-dark {
   background: linear-gradient(180deg, #4d0808 0%, #2a0404 100%) !important;
   border: 1px solid #a52f2f !important;
   color: #f0c0c0 !important;
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.1),
+    0 4px 6px rgba(0, 0, 0, 0.4) !important;
 }
-
 body.fondo-vintage .btn-outline-dark:hover {
   background: linear-gradient(180deg, #6e0d0d 0%, #3a0606 100%) !important;
   color: #ffffff !important;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5) !important;
+  transform: translateY(-2px);
 }
-
 body.fondo-vintage .tech-badge {
   color: #f0c0c0 !important;
   border: 1px solid rgba(165, 47, 47, 0.5);
 }
-
 body.fondo-vintage .bg-tech-html,
 body.fondo-vintage .bg-tech-css,
 body.fondo-vintage .bg-tech-boot,
@@ -423,87 +437,60 @@ body.fondo-vintage .bg-tech-nginx,
 body.fondo-vintage .bg-tech-docker {
   background-color: #4d0808 !important;
 }
-
 body.fondo-vintage .nav-tabs {
   border-bottom: 1px solid #6e0d0d;
 }
-
 body.fondo-vintage .nav-tabs .nav-link {
   color: #e07a7a !important;
   background: transparent !important;
 }
-
 body.fondo-vintage .nav-tabs .nav-link.active {
   color: #ffffff !important;
   background: #2a0404 !important;
   border: 1px solid #a52f2f !important;
 }
-
 body.fondo-vintage .accordion-item {
   background-color: #150404 !important;
   border: 1px solid #6e0d0d !important;
 }
-
 body.fondo-vintage .accordion-button {
   background-color: #2a0404 !important;
   color: #f0c0c0 !important;
 }
-
 body.fondo-vintage .accordion-button:not(.collapsed) {
   background-color: #4d0808 !important;
   color: #ffffff !important;
+  box-shadow: none !important;
 }
-
 body.fondo-vintage .accordion-button::after {
   filter: invert(1) sepia(1) saturate(5) hue-rotate(-40deg);
 }
-
 body.fondo-vintage .accordion-body {
   background-color: #1a0505 !important;
   color: #e8d5d5 !important;
 }
-
 body.fondo-vintage .list-group-item {
   background-color: rgba(20, 5, 5, 0.7) !important;
   color: #e8d5d5 !important;
   border-color: rgba(165, 47, 47, 0.4) !important;
 }
-
 body.fondo-vintage .img-placeholder {
   background-color: rgba(78, 8, 8, 0.4) !important;
   border: 2px dashed #a52f2f !important;
   color: #e8d5d5 !important;
 }
-
 body.fondo-vintage footer {
   background: #0d0202;
   border-top: 1px solid #6e0d0d;
+  backdrop-filter: none;
 }
-
 body.fondo-vintage footer p,
 body.fondo-vintage footer small {
   color: #e07a7a;
 }
 
-body.fondo-vintage .table {
-  color: #e8d5d5 !important;
-  border-color: rgba(165, 47, 47, 0.5) !important;
-}
-
-body.fondo-vintage .table-dark {
-  background: rgba(45, 5, 5, 0.9) !important;
-}
-
-body.fondo-vintage th {
-  color: #f0c0c0 !important;
-}
-
-body.fondo-vintage td {
-  color: #e8d5d5 !important;
-}
-
 /* =========================================
-   TEMA TELARAÑA SPIDERMAN (pages/italo.html)
+   TEMA TELARAÑA SPIDERMAN (solo pages/italo.html)
    ========================================= */
 html.fondo-telarana,
 body.fondo-telarana {
@@ -528,6 +515,7 @@ body.fondo-telarana {
   background-attachment: fixed, fixed, fixed;
   font-family: "Nunito", sans-serif;
   min-height: 100%;
+  cursor: auto;
 }
 
 body.fondo-telarana h1,
@@ -540,76 +528,74 @@ body.fondo-telarana .retro-title {
     0 0 10px rgba(217, 38, 38, 0.6),
     0 0 18px rgba(30, 60, 200, 0.4);
 }
-
 body.fondo-telarana p,
 body.fondo-telarana li,
 body.fondo-telarana .lead,
 body.fondo-telarana .text-muted {
   color: #cfd0e8 !important;
 }
-
 body.fondo-telarana .navbar {
   background: rgba(10, 10, 26, 0.92) !important;
   border-bottom: 1px solid #d92626;
+  backdrop-filter: none;
 }
-
 body.fondo-telarana .navbar-brand,
 body.fondo-telarana .nav-link {
   color: #cfd0e8 !important;
 }
-
 body.fondo-telarana .nav-link:hover {
   color: #ff5c5c !important;
 }
-
+body.fondo-telarana .nav-links .nav-link {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(217, 38, 38, 0.4);
+}
 body.fondo-telarana .nav-link.active {
   color: #ffffff !important;
   background: linear-gradient(
     90deg,
     rgba(217, 38, 38, 0.25),
     rgba(30, 60, 200, 0.25)
-  );
+  ) !important;
 }
-
 body.fondo-telarana .navbar-toggler-icon {
   filter: invert(1);
 }
-
 body.fondo-telarana .card {
   background: rgba(15, 15, 32, 0.88) !important;
   color: #e2e2f5 !important;
   border: 1px solid rgba(217, 38, 38, 0.4) !important;
+  backdrop-filter: none !important;
   box-shadow: 0 0 0 1px rgba(30, 60, 200, 0.15) inset;
 }
-
 body.fondo-telarana .card:hover {
   border-color: rgba(30, 60, 200, 0.6) !important;
   box-shadow: 0 4px 20px rgba(217, 38, 38, 0.25);
 }
-
 body.fondo-telarana .btn-outline-dark {
   background: linear-gradient(135deg, #d92626 0%, #1e3cc8 100%) !important;
   border: 1px solid #ff5c5c !important;
   color: #ffffff !important;
 }
-
 body.fondo-telarana .btn-outline-dark:hover {
   background: linear-gradient(135deg, #ff3b3b 0%, #2a4fe0 100%) !important;
   color: #ffffff !important;
 }
-
 body.fondo-telarana .img-placeholder {
   background-color: rgba(30, 60, 200, 0.15) !important;
   border: 2px dashed #d92626 !important;
   color: #e2e2f5 !important;
 }
-
 body.fondo-telarana footer {
   background: #0a0a1a;
   border-top: 1px solid #d92626;
+  backdrop-filter: none;
 }
-
 body.fondo-telarana footer p,
 body.fondo-telarana footer small {
   color: #9a9ac0;
 }
+
+/* =========================================
+  mejor, pero no perfect
+   ========================================= */

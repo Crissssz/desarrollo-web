@@ -1,28 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Instalación de Docker</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="imágenes/pez.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="imágenes/pez.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="bg-principal">
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="index.html">Los Poco Serios</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Navegación">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Navegación"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <div class="nav-links">
             <a class="nav-link" href="index.html">Inicio</a>
             <a class="nav-link" href="integrantes.html">Conocer al equipo</a>
-            <a class="nav-link active" href="contenidos.html">Investigaciones</a>
+            <a class="nav-link active" href="contenidos.html"
+              >Investigaciones</a
+            >
           </div>
         </div>
       </div>
@@ -30,15 +46,26 @@
 
     <header class="container text-center my-5">
       <h1 class="display-4">Instalación de Docker</h1>
-      <p class="lead text-muted">Requisitos, pasos de instalación en Windows y evidencia de ejecución</p>
+      <p class="lead text-muted">
+        Requisitos, pasos de instalación en Windows y evidencia de ejecución
+      </p>
     </header>
 
     <main class="container mb-5">
       <section class="mb-5">
         <div class="card p-4">
           <h2>¿Qué es Docker Desktop?</h2>
-          <p><strong>Docker Desktop</strong> es una aplicación de escritorio para Windows, Mac y Linux que facilita la creación, configuración y ejecución de contenedores Docker. Incluye el Docker Engine, Docker CLI, Docker Compose, Docker Hub y herramientas de Kubernetes.</p>
-          <p>Proporciona una interfaz gráfica intuitiva para gestionar contenedores, imágenes, redes y volúmenes sin necesidad de usar exclusivamente la línea de comandos.</p>
+          <p>
+            <strong>Docker Desktop</strong> es una aplicación de escritorio para
+            Windows, Mac y Linux que facilita la creación, configuración y
+            ejecución de contenedores Docker. Incluye el Docker Engine, Docker
+            CLI, Docker Compose, Docker Hub y herramientas de Kubernetes.
+          </p>
+          <p>
+            Proporciona una interfaz gráfica intuitiva para gestionar
+            contenedores, imágenes, redes y volúmenes sin necesidad de usar
+            exclusivamente la línea de comandos.
+          </p>
         </div>
       </section>
 
@@ -46,11 +73,24 @@
         <div class="card p-4">
           <h2>Requisitos Básicos de Instalación</h2>
           <ul>
-            <li><strong>Sistema operativo:</strong> Windows 10 o 11 (versión 64-bit con WSL 2 habilitado).</li>
-            <li><strong>Memoria RAM:</strong> Mínimo 4 GB recomendados (8 GB o más ideal).</li>
-            <li><strong>Disco duro:</strong> Al menos 4 GB de espacio libre.</li>
-            <li><strong>Virtualización:</strong> Habilitar virtualización BIOS/UEFI (VT-x o AMD-V).</li>
-            <li><strong>WSL 2:</strong> Windows Subsystem for Linux version 2.</li>
+            <li>
+              <strong>Sistema operativo:</strong> Windows 10 o 11 (versión
+              64-bit con WSL 2 habilitado).
+            </li>
+            <li>
+              <strong>Memoria RAM:</strong> Mínimo 4 GB recomendados (8 GB o más
+              ideal).
+            </li>
+            <li>
+              <strong>Disco duro:</strong> Al menos 4 GB de espacio libre.
+            </li>
+            <li>
+              <strong>Virtualización:</strong> Habilitar virtualización
+              BIOS/UEFI (VT-x o AMD-V).
+            </li>
+            <li>
+              <strong>WSL 2:</strong> Windows Subsystem for Linux version 2.
+            </li>
           </ul>
         </div>
       </section>
@@ -59,12 +99,26 @@
         <div class="card p-4">
           <h2>Pasos para Instalar Docker Desktop en Windows</h2>
           <ol>
-            <li>Descargar Docker Desktop desde <code>https://www.docker.com/products/docker-desktop/</code>.</li>
-            <li>Ejecutar el instalador <code>Docker Desktop Installer.exe</code>.</li>
-            <li>Marcar la opción <strong>"Use WSL 2 instead of Hyper-V"</strong> (recomendado).</li>
-            <li>Hacer clic en <strong>OK</strong> y esperar a que complete la instalación.</li>
+            <li>
+              Descargar Docker Desktop desde
+              <code>https://www.docker.com/products/docker-desktop/</code>.
+            </li>
+            <li>
+              Ejecutar el instalador <code>Docker Desktop Installer.exe</code>.
+            </li>
+            <li>
+              Marcar la opción
+              <strong>"Use WSL 2 instead of Hyper-V"</strong> (recomendado).
+            </li>
+            <li>
+              Hacer clic en <strong>OK</strong> y esperar a que complete la
+              instalación.
+            </li>
             <li>Reiniciar el computador cuando se solicite.</li>
-            <li>Después del reinicio, abrir Docker Desktop y esperar a que el servicio inicie.</li>
+            <li>
+              Después del reinicio, abrir Docker Desktop y esperar a que el
+              servicio inicie.
+            </li>
           </ol>
         </div>
       </section>
@@ -72,9 +126,18 @@
       <section class="mb-5">
         <div class="card p-4">
           <h2>Evidencia: Comando hello-world</h2>
-          <p>Después de instalar Docker Desktop, se puede verificar la instalación ejecutando:</p>
-          <pre class="bg-dark text-light p-3 rounded"><code>docker run hello-world</code></pre>
-          <p>Este comando descarga la imagen <code>hello-world</code> desde Docker Hub y ejecuta un contenedor que muestra un mensaje de confirmación:</p>
+          <p>
+            Después de instalar Docker Desktop, se puede verificar la
+            instalación ejecutando:
+          </p>
+          <pre
+            class="bg-dark text-light p-3 rounded"
+          ><code>docker run hello-world</code></pre>
+          <p>
+            Este comando descarga la imagen <code>hello-world</code> desde
+            Docker Hub y ejecuta un contenedor que muestra un mensaje de
+            confirmación:
+          </p>
           <pre class="bg-dark text-light p-3 rounded"><code>Hello from Docker!
 This message shows that your installation appears to be working correctly.
 
@@ -94,12 +157,25 @@ To generate this message, Docker took the following steps:
           <h2>Evidencia: Docker Desktop Funcionando</h2>
           <p>Al abrir Docker Desktop, se muestra el panel principal con:</p>
           <ul>
-            <li><strong>Containers:</strong> Lista de contenedores en ejecución o detenidos.</li>
-            <li><strong>Images:</strong> Catálogo de imágenes descargadas localmente.</li>
+            <li>
+              <strong>Containers:</strong> Lista de contenedores en ejecución o
+              detenidos.
+            </li>
+            <li>
+              <strong>Images:</strong> Catálogo de imágenes descargadas
+              localmente.
+            </li>
             <li><strong>Volumes:</strong> Volúmenes persistentes creados.</li>
-            <li><strong>Settings:</strong> Configuración de WSL 2, puertos, recursos y Docker Engine.</li>
+            <li>
+              <strong>Settings:</strong> Configuración de WSL 2, puertos,
+              recursos y Docker Engine.
+            </li>
           </ul>
-          <p>Cuando el indicador en la esquina inferior izquierda muestra <strong>"Engine running"</strong> en verde, Docker está listo para usar.</p>
+          <p>
+            Cuando el indicador en la esquina inferior izquierda muestra
+            <strong>"Engine running"</strong> en verde, Docker está listo para
+            usar.
+          </p>
         </div>
       </section>
     </main>
@@ -107,10 +183,13 @@ To generate this message, Docker took the following steps:
     <footer>
       <div class="container">
         <p class="mb-1">Los Poco Serios</p>
-        <small>Proyecto de Desarrollo Web - HTML, CSS, Bootstrap, Docker y Nginx</small>
+        <small
+          >Proyecto de Desarrollo Web - HTML, CSS, Bootstrap, Docker y
+          Nginx</small
+        >
       </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>

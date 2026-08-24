@@ -1,28 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Comandos Docker</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="imágenes/pez.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="imágenes/pez.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="bg-principal">
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="index.html">Los Poco Serios</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Navegación">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Navegación"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <div class="nav-links">
             <a class="nav-link" href="index.html">Inicio</a>
             <a class="nav-link" href="integrantes.html">Conocer al equipo</a>
-            <a class="nav-link active" href="contenidos.html">Investigaciones</a>
+            <a class="nav-link active" href="contenidos.html"
+              >Investigaciones</a
+            >
           </div>
         </div>
       </div>
@@ -30,7 +46,9 @@
 
     <header class="container text-center my-5">
       <h1 class="display-4">Comandos Docker</h1>
-      <p class="lead text-muted">Sintaxis, descripción y ejemplos de los comandos más usados</p>
+      <p class="lead text-muted">
+        Sintaxis, descripción y ejemplos de los comandos más usados
+      </p>
     </header>
 
     <main class="container mb-5">
@@ -81,20 +99,26 @@
                     <td><code>docker ps -a</code></td>
                     <td>Mostrar todos los contenedores</td>
                     <td><code>docker ps -a</code></td>
-                    <td>Lista todos los contenedores, incluyendo los detenidos.</td>
+                    <td>
+                      Lista todos los contenedores, incluyendo los detenidos.
+                    </td>
                     <td><code>docker ps -a</code></td>
                   </tr>
                   <tr>
                     <td><code>docker build</code></td>
                     <td>Construir una imagen desde un Dockerfile</td>
                     <td><code>docker build -t [NOMBRE] .</code></td>
-                    <td>Construye una imagen personalizada desde un Dockerfile.</td>
+                    <td>
+                      Construye una imagen personalizada desde un Dockerfile.
+                    </td>
                     <td><code>docker build -t mi-sitio .</code></td>
                   </tr>
                   <tr>
                     <td><code>docker run</code></td>
                     <td>Crear y ejecutar un contenedor</td>
-                    <td><code>docker run -d -p [PUERTO]:[PUERTO] [IMAGEN]</code></td>
+                    <td>
+                      <code>docker run -d -p [PUERTO]:[PUERTO] [IMAGEN]</code>
+                    </td>
                     <td>Crea un contenedor nuevo desde una imagen.</td>
                     <td><code>docker run -d -p 8080:80 mi-sitio</code></td>
                   </tr>
@@ -137,7 +161,9 @@
                     <td><code>docker exec</code></td>
                     <td>Ejecutar comandos dentro de un contenedor</td>
                     <td><code>docker exec -it [CONTENEDOR] [COMANDO]</code></td>
-                    <td>Ejecuta comandos interactivos dentro de un contenedor.</td>
+                    <td>
+                      Ejecuta comandos interactivos dentro de un contenedor.
+                    </td>
                     <td><code>docker exec -it mi-contenedor sh</code></td>
                   </tr>
                 </tbody>
@@ -151,10 +177,13 @@
     <footer>
       <div class="container">
         <p class="mb-1">Los Poco Serios</p>
-        <small>Proyecto de Desarrollo Web - HTML, CSS, Bootstrap, Docker y Nginx</small>
+        <small
+          >Proyecto de Desarrollo Web - HTML, CSS, Bootstrap, Docker y
+          Nginx</small
+        >
       </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
