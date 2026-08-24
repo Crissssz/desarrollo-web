@@ -22,7 +22,7 @@
           <div class="nav-links">
             <a class="nav-link" href="index.html">Inicio</a>
             <a class="nav-link" href="integrantes.html">Conocer al equipo</a>
-            <a class="nav-link active" href="investigaciones.html">Investigaciones</a>
+            <a class="nav-link active" href="contenidos.html">Investigaciones</a>
           </div>
         </div>
       </div>
@@ -32,7 +32,7 @@
       <h1 class="display-4">Construcción y Publicación con Nginx</h1>
       <p class="lead text-muted">Cómo desplegar el sitio web utilizando Docker y Nginx</p>
       <div class="alert alert-warning mt-3" role="alert">
-        <strong>Importante:</strong> Asegúrate de tener Docker Desktop instalado antes de seguir estos pasos. Consulta la página de <a href="docker-instalacion.html" class="alert-link">instalación de Docker</a> si es necesario.
+        <strong>Importante:</strong> Asegúrate de tener Docker Desktop instalado antes de seguir estos pasos. Consulta la página de <a href="instalacion.html" class="alert-link">instalación de Docker</a> si es necesario.
       </div>
     </header>
 
@@ -53,11 +53,11 @@
 
 COPY index.html /usr/share/nginx/html/index.html
 COPY integrantes.html /usr/share/nginx/html/integrantes.html
-COPY investigaciones.html /usr/share/nginx/html/investigaciones.html
-COPY investigacion_html.html /usr/share/nginx/html/investigacion_html.html
-COPY investigacion_css.html /usr/share/nginx/html/investigacion_css.html
-COPY investigacion_bootstrap.html /usr/share/nginx/html/investigacion_bootstrap.html
-COPY docker-instalacion.html /usr/share/nginx/html/docker-instalacion.html
+COPY contenidos.html /usr/share/nginx/html/contenidos.html
+COPY html-semantico.html /usr/share/nginx/html/html-semantico.html
+COPY css.html /usr/share/nginx/html/css.html
+COPY bootstrap.html /usr/share/nginx/html/bootstrap.html
+COPY instalacion.html /usr/share/nginx/html/instalacion.html
 COPY docker-comandos.html /usr/share/nginx/html/docker-comandos.html
 COPY investigacion_nginx.html /usr/share/nginx/html/investigacion_nginx.html
 COPY reflexion.html /usr/share/nginx/html/reflexion.html
