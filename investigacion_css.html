@@ -14,11 +14,16 @@
 <body>
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Los Contenedores Web</a>
-        <div class="d-flex gap-2">
-          <a class="nav-link" href="index.html">Inicio</a>
-          <a class="nav-link" href="integrantes.html">Conocer al equipo</a>
-          <a class="nav-link active" href="investigaciones.html">Investigaciones</a>
+        <a class="navbar-brand" href="index.html">Los Poco Serios</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="d-flex gap-2">
+            <a class="nav-link" href="index.html">Inicio</a>
+            <a class="nav-link" href="integrantes.html">Conocer al equipo</a>
+            <a class="nav-link active" href="investigaciones.html">Investigaciones</a>
+          </div>
         </div>
       </div>
     </nav>
@@ -32,8 +37,9 @@
       <section class="row mb-5">
         <div class="col-md-12">
           <div class="card p-4">
-            <h2>Introducción</h2>
-            <p>Conformado por un grupo de estudiantes de informática, investigando y desarrollando para poder dominar la infraestructura web y el despliegue mediante Docker.</p>
+            <h2>¿Qué es CSS?</h2>
+            <p><strong>CSS</strong> (Cascading Style Sheets) es el lenguaje de estilos que se utiliza para definir la presentación visual de un documento HTML. Mientras que HTML se encarga de la estructura y el contenido, CSS controla colores, fuentes, espaciados, disposition y diseño responsivo.</p>
+            <p>Fue creado en 1996 por el W3C y es una de las tres tecnologías fundamentales de la web junto con HTML y JavaScript.</p>
           </div>
         </div>
       </section>
@@ -41,21 +47,171 @@
       <section class="row mb-5">
         <div class="col-md-12">
           <div class="card p-4">
-            <h2>Ejemplos</h2>
-            <p>Conformado por un grupo de estudiantes de informática, investigando y desarrollando para poder dominar la infraestructura web y el despliegue mediante Docker.</p>
+            <h2>Importancia de CSS en el Desarrollo Web</h2>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <div class="card h-100 p-3">
+                  <h5>Separación de contenido y presentación</h5>
+                  <p class="text-muted mb-0">Permite modificar el diseño sin alterar la estructura HTML del sitio.</p>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="card h-100 p-3">
+                  <h5>Diseño responsivo</h5>
+                  <p class="text-muted mb-0">Adapta el sitio a diferentes tamaños de pantalla usando media queries.</p>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="card h-100 p-3">
+                  <h5>Consistencia visual</h5>
+                  <p class="text-muted mb-0">Un solo archivo CSS puede controlar el estilo de todo el sitio web.</p>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="card h-100 p-3">
+                  <h5>Mejora la experiencia de usuario</h5>
+                  <p class="text-muted mb-0">Un diseño atractivo y funcional retiene a los visitantes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="row mb-5">
+        <div class="col-md-12">
+          <div class="card p-4">
+            <h2>Formas de Aplicar CSS</h2>
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card h-100 p-3">
+                  <h5>1. En línea (inline)</h5>
+                  <p class="small text-muted">Se aplica directamente en la etiqueta HTML usando el atributo <code>style</code>.</p>
+                  <pre class="bg-dark text-light p-2 rounded"><code>&lt;p style="color: blue;"&gt;Texto azul&lt;/p&gt;</code></pre>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card h-100 p-3">
+                  <h5>2. Interno (interno)</h5>
+                  <p class="small text-muted">Se define dentro de una etiqueta <code>&lt;style&gt;</code> en el <code>&lt;head&gt;</code> del HTML.</p>
+                  <pre class="bg-dark text-light p-2 rounded"><code>&lt;style&gt;
+  p { color: blue; }
+&lt;/style&gt;</code></pre>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card h-100 p-3">
+                  <h5>3. Externo (externo)</h5>
+                  <p class="small text-muted">Se enlaza un archivo <code>.css</code> independiente con <code>&lt;link&gt;</code>.</p>
+                  <pre class="bg-dark text-light p-2 rounded"><code>&lt;link rel="stylesheet"
+  href="styles.css"&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="row mb-5">
+        <div class="col-md-12">
+          <div class="card p-4">
+            <h2>Selectores, Clases e Identificadores</h2>
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card h-100 p-3">
+                  <h5>Selectores básicos</h5>
+                  <p class="small text-muted">Seleccionan elementos por etiqueta.</p>
+                  <pre class="bg-dark text-light p-2 rounded"><code>p { color: red; }
+h1 { font-size: 2rem; }</code></pre>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card h-100 p-3">
+                  <h5>Clases (.)</h5>
+                  <p class="small text-muted">Reutilizables en múltiples elementos.</p>
+                  <pre class="bg-dark text-light p-2 rounded"><code>.card { padding: 20px; }
+&lt;div class="card"&gt;</code></pre>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card h-100 p-3">
+                  <h5>Identificadores (#)</h5>
+                  <p class="small text-muted">Únicos en la página.</p>
+                  <pre class="bg-dark text-light p-2 rounded"><code>#header { background: blue; }
+&lt;div id="header"&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="row mb-5">
+        <div class="col-md-12">
+          <div class="card p-4">
+            <h2>Modelo de Caja (Box Model)</h2>
+            <p>Cada elemento HTML es un rectángulo compuesto por cuatro áreas:</p>
+            <div class="row text-center mt-3">
+              <div class="col-md-3 mb-3">
+                <div class="card h-100 p-3">
+                  <h5>Margen</h5>
+                  <p class="text-muted mb-0">Espacio exterior que separa el elemento de otros.</p>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card h-100 p-3">
+                  <h5>Borde</h5>
+                  <p class="text-muted mb-0">Línea que rodea el elemento.</p>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card h-100 p-3">
+                  <h5>Relleno</h5>
+                  <p class="text-muted mb-0">Espacio interior entre el borde y el contenido.</p>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card h-100 p-3">
+                  <h5>Contenido</h5>
+                  <p class="text-muted mb-0">El texto o imagen que muestra el elemento.</p>
+                </div>
+              </div>
+            </div>
+            <pre class="bg-dark text-light p-3 rounded mt-3"><code>.elemento {
+  margin: 20px;      /* Margen exterior */
+  border: 1px solid black;  /* Borde */
+  padding: 15px;     /* Relleno interior */
+  width: 300px;      /* Ancho del contenido */
+}</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="row mb-5">
+        <div class="col-md-12">
+          <div class="card p-4">
+            <h2>Ejemplos de Estilos en Este Sitio</h2>
+            <p>Este sitio utiliza CSS personalizado combinado con Bootstrap. Algunos ejemplos:</p>
+            <ul>
+              <li><strong>Navbar minimalista:</strong> Fondo blanco semitransparente con efecto de desenfoque.</li>
+              <li><strong>Tarjetas:</strong> Bordes redondeados y sombras sutiles al pasar el mouse.</li>
+              <li><strong>Botones:</strong> Fondo negro con transiciones suaves.</li>
+              <li><strong>Tipografía:</strong> DotGothic16 para títulos, Nunito para el cuerpo del texto.</li>
+              <li><strong>Badges:</strong> Colores pastel para tecnologías (HTML azul, CSS verde, Bootstrap lila).</li>
+            </ul>
           </div>
         </div>
       </section>
 
       <section class="text-center">
-        <a href="https://developer.mozilla.org/es/docs/Web/CSS" class="btn btn-outline-dark m-2">Ver más sobre CSS</a>
+        <a href="https://developer.mozilla.org/es/docs/Web/CSS" class="btn btn-outline-dark m-2" target="_blank">Ver más sobre CSS</a>
         <a href="investigaciones.html" class="btn btn-outline-dark m-2">Volver a Investigaciones</a>
       </section>
     </main>
 
     <footer>
       <div class="container">
-        <p class="mb-1">Los Contenedores Web</p>
+        <p class="mb-1">Los Poco Serios</p>
         <small>Proyecto de Desarrollo Web - HTML, CSS, Bootstrap, Docker y Nginx</small>
       </div>
     </footer>

@@ -14,11 +14,16 @@
 <body>
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Los Contenedores Web</a>
-        <div class="d-flex gap-2">
-          <a class="nav-link" href="index.html">Inicio</a>
-          <a class="nav-link" href="integrantes.html">Conocer al equipo</a>
-          <a class="nav-link active" href="investigaciones.html">Investigaciones</a>
+        <a class="navbar-brand" href="index.html">Los Poco Serios</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="d-flex gap-2">
+            <a class="nav-link" href="index.html">Inicio</a>
+            <a class="nav-link" href="integrantes.html">Conocer al equipo</a>
+            <a class="nav-link active" href="investigaciones.html">Investigaciones</a>
+          </div>
         </div>
       </div>
     </nav>
@@ -48,6 +53,14 @@
 
         <div class="col-md-6 mb-4">
           <div class="card h-100 p-4">
+            <h2>Nginx</h2>
+            <p>Cómo se construye y publica el sitio utilizando Docker y Nginx como servidor web.</p>
+            <a href="investigacion_nginx.html" class="btn btn-outline-dark mt-auto">Ver investigación</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 p-4">
             <h2>CSS</h2>
             <p>Definición, formas de aplicar CSS, selectores, clases, identificadores y el modelo de caja.</p>
             <a href="investigacion_css.html" class="btn btn-outline-dark mt-auto">Ver investigación</a>
@@ -69,12 +82,20 @@
             <a href="investigacion_html.html" class="btn btn-outline-dark mt-auto">Ver investigación</a>
           </div>
         </div>
+
+        <div class="col-md-12 mb-4">
+          <div class="card h-100 p-4">
+            <h2>Reflexión</h2>
+            <p>Experiencia del equipo, dificultades encontradas, soluciones aplicadas y aprendizajes obtenidos durante el desarrollo del proyecto.</p>
+            <a href="reflexion.html" class="btn btn-outline-dark mt-auto">Ver reflexión</a>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer>
       <div class="container">
-        <p class="mb-1">Los Contenedores Web</p>
+        <p class="mb-1">Los Poco Serios</p>
         <small>Proyecto de Desarrollo Web - HTML, CSS, Bootstrap, Docker y Nginx</small>
       </div>
     </footer>

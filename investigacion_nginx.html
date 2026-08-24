@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construcción y Publicación con Nginx</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="imágenes/pez.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Los Poco Serios</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="d-flex gap-2">
+            <a class="nav-link" href="index.html">Inicio</a>
+            <a class="nav-link" href="integrantes.html">Conocer al equipo</a>
+            <a class="nav-link active" href="investigaciones.html">Investigaciones</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="container text-center my-5">
+      <h1 class="display-4">Construcción y Publicación con Nginx</h1>
+      <p class="lead text-muted">Cómo desplegar el sitio web utilizando Docker y Nginx</p>
+    </header>
+
+    <main class="container mb-5">
+      <section class="mb-5">
+        <div class="card p-4">
+          <h2>¿Qué es Nginx?</h2>
+          <p><strong>Nginx</strong> (pronunciado "engine-x") es un servidor web de alto rendimiento que puede funcionar como servidor HTTP, proxy reverso, balanceador de carga y servidor de correo electrónico. Es uno de los servidores web más utilizados del mundo, conocido por su velocidad y bajo consumo de recursos.</p>
+          <p>En este proyecto, Nginx se utiliza para <strong>servir los archivos estáticos</strong> del sitio web (HTML, CSS, imágenes) dentro de un contenedor Docker.</p>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <div class="card p-4">
+          <h2>Contenido del Dockerfile</h2>
+          <p>El archivo <code>Dockerfile</code> define cómo se construye la imagen Docker del sitio:</p>
+          <pre class="bg-dark text-light p-3 rounded"><code>FROM nginx:alpine
+
+COPY index.html /usr/share/nginx/html/index.html
+COPY integrantes.html /usr/share/nginx/html/integrantes.html
+COPY investigaciones.html /usr/share/nginx/html/investigaciones.html
+COPY investigacion_html.html /usr/share/nginx/html/investigacion_html.html
+COPY investigacion_css.html /usr/share/nginx/html/investigacion_css.html
+COPY investigacion_bootstrap.html /usr/share/nginx/html/investigacion_bootstrap.html
+COPY docker-instalacion.html /usr/share/nginx/html/docker-instalacion.html
+COPY docker-comandos.html /usr/share/nginx/html/docker-comandos.html
+COPY investigacion_nginx.html /usr/share/nginx/html/investigacion_nginx.html
+COPY reflexion.html /usr/share/nginx/html/reflexion.html
+
+COPY css/ /usr/share/nginx/html/css/
+COPY pages/ /usr/share/nginx/html/pages/
+COPY imágenes/ /usr/share/nginx/html/imágenes/
+
+EXPOSE 80</code></pre>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <div class="card p-4">
+          <h2>Explicación de las Instrucciones</h2>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div class="card h-100 p-3">
+                <h5><code>FROM nginx:alpine</code></h5>
+                <p class="text-muted mb-0">Define la imagen base: Nginx versión Alpine (ligera). Descarga automáticamente la imagen desde Docker Hub.</p>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="card h-100 p-3">
+                <h5><code>COPY [origen] [destino]</code></h5>
+                <p class="text-muted mb-0">Copia archivos del equipo al contenedor. La destino <code>/usr/share/nginx/html/</code> es donde Nginx busca los archivos del sitio.</p>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="card h-100 p-3">
+                <h5><code>EXPOSE 80</code></h5>
+                <p class="text-muted mb-0">Indica que el contenedor expone el puerto 80 (puerto HTTP estándar).</p>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="card h-100 p-3">
+                <h5><code>COPY css/ ...</code></h5>
+                <p class="text-muted mb-0">Copia carpetas completas con todos los archivos de estilos, páginas e imágenes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <div class="card p-4">
+          <h2>Comandos de Construcción y Ejecución</h2>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div class="card h-100 p-3">
+                <h5>Construir la imagen</h5>
+                <pre class="bg-dark text-light p-2 rounded"><code>docker build -t los-poco-serios .</code></pre>
+                <p class="small text-muted mt-2">El parámetro <code>-t</code> asigna un nombre a la imagen. El punto <code>.</code> indica que el Dockerfile está en el directorio actual.</p>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="card h-100 p-3">
+                <h5>Ejecutar el contenedor</h5>
+                <pre class="bg-dark text-light p-2 rounded"><code>docker run -d -p 8080:80 los-poco-serios</code></pre>
+                <p class="small text-muted mt-2">El parámetro <code>-d</code> ejecuta en segundo plano. <code>-p 8080:80</code> mapea el puerto.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <div class="card p-4">
+          <h2>Mapeo de Puertos</h2>
+          <p>El mapeo de puertos <code>-p 8080:80</code> funciona así:</p>
+          <div class="row text-center mt-3">
+            <div class="col-md-4 mb-3">
+              <div class="card h-100 p-3">
+                <h5>Puerto del host (8080)</h5>
+                <p class="text-muted mb-0">El puerto en tu computador al que accedes desde el navegador.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card h-100 p-3">
+                <h5>Puerto del contenedor (80)</h5>
+                <p class="text-muted mb-0">El puerto interno donde Nginx está escuchando.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card h-100 p-3">
+                <h5>Resultado</h5>
+                <p class="text-muted mb-0">Accedes al sitio en <code>http://localhost:8080</code></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <div class="card p-4">
+          <h2>Evidencia de Funcionamiento</h2>
+          <p>Al ejecutar los comandos correctamente, el sitio debería estar disponible en <code>http://localhost:8080</code>.</p>
+          <ul>
+            <li>El navegador muestra la página principal del sitio.</li>
+            <li>La navegación entre páginas funciona correctamente.</li>
+            <li>Los estilos CSS se aplican adecuadamente.</li>
+            <li>Las imágenes se cargan sin problemas.</li>
+          </ul>
+          <p>En la terminal, el contenedor aparece ejecutándose con el comando:</p>
+          <pre class="bg-dark text-light p-3 rounded"><code>docker ps</code></pre>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p class="mb-1">Los Poco Serios</p>
+        <small>Proyecto de Desarrollo Web - HTML, CSS, Bootstrap, Docker y Nginx</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
