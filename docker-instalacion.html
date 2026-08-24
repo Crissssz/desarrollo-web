@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instalacion de Docker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="imagen-pestaña.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand retro-title" href="index.html">Los Contenedores Web</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="integrantes.html">Integrantes</a></li>
+            <li class="nav-item"><a class="nav-link" href="investigaciones.html">Investigaciones</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="container text-center my-5">
+      <h1 class="display-4 retro-title">Instalacion de Docker</h1>
+      <p class="lead">Requisitos, pasos de instalacion en Windows y evidencia de ejecucion.</p>
+    </header>
+
+    <main class="container mb-5">
+
+      <section class="mb-5">
+        <div class="card h-100 p-4 shadow-sm">
+          <h2>Que es Docker Desktop?</h2>
+          <p><strong>Docker Desktop</strong> es una aplicacion de escritorio para Windows, Mac y Linux que facilita la creacion, configuracion y ejecucion de contenedores Docker. Incluye el Docker Engine, Docker CLI, Docker Compose, Docker Hub y herramientas de Kubernetes.</p>
+          <p>Proporciona una interfaz grafica intuitiva para gestionar contenedores, imagenes, redes y volumenes sin necesidad de usar exclusivamente la linea de comandos.</p>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <div class="card h-100 p-4 shadow-sm">
+          <h2>Requisitos Basicos de Instalacion</h2>
+          <ul>
+            <li><strong>Sistema operativo:</strong> Windows 10 o 11 (version 64-bit con WSL 2 habilitado).</li>
+            <li><strong>Memoria RAM:</strong> Minimo 4 GB recomendados (8 GB o mas ideal).</li>
+            <li><strong>Disco duro:</strong> Al menos 4 GB de espacio libre.</li>
+            <li><strong>Virtualizacion:</strong> Habilitar virtualizacion BIOS/UEFI (VT-x o AMD-V).</li>
+            <li><strong>WSL 2:</strong> Windows Subsystem for Linux version 2 (se instala automaticamente durante la configuracion).</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <div class="card h-100 p-4 shadow-sm">
+          <h2>Pasos para Instalar Docker Desktop en Windows</h2>
+          <ol>
+            <li>Descargar Docker Desktop desde <code>https://www.docker.com/products/docker-desktop/</code>.</li>
+            <li>Ejecutar el instalador <code>Docker Desktop Installer.exe</code>.</li>
+            <li>Marcar la opcion <strong>"Use WSL 2 instead of Hyper-V"</strong> (recomendado).</li>
+            <li>Hacer clic en <strong>OK</strong> y esperar a que complete la instalacion.</li>
+            <li>Reiniciar el computador cuando se solicite.</li>
+            <li>Despues del reinicio, abrir Docker Desktop y esperar a que el servicio inicie (icono verde en la bandeja).</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <div class="card h-100 p-4 shadow-sm">
+          <h2>Evidencia: Comando hello-world</h2>
+          <p>Despues de instalar Docker Desktop, se puede verificar la instalacion ejecutando:</p>
+          <pre class="bg-dark text-light p-3 rounded"><code>docker run hello-world</code></pre>
+          <p>Este comando descarga la imagen <code>hello-world</code> desde Docker Hub y ejecuta un contenedor que muestra un mensaje de confirmacion:</p>
+          <pre class="bg-dark text-light p-3 rounded"><code>Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.</code></pre>
+          <p>Si este mensaje aparece, la instalacion fue exitosa.</p>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <div class="card h-100 p-4 shadow-sm">
+          <h2>Evidencia: Docker Desktop Funcionando</h2>
+          <p>Al abrir Docker Desktop, se muestra el panel principal con:</p>
+          <ul>
+            <li><strong>Containers:</strong> Lista de contenedores en ejecucion o detenidos.</li>
+            <li><strong>Images:</strong> Catalogo de imagenes descargadas localmente.</li>
+            <li><strong>Volumes:</strong> Volumenes persistentes creados.</li>
+            <li><strong>Settings:</strong> Configuracion de WSL 2, puertos, recursos y Docker Engine.</li>
+          </ul>
+          <p>Cuando el indicador en la esquina inferior izquierda muestra <strong>"Engine running"</strong> en verde, Docker esta listo para usar.</p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="container">
+        <p class="mb-1 retro-title">Los Contenedores Web</p>
+        <small>Proyecto de Desarrollo Web - HTML, CSS, Bootstrap, Docker y Nginx</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
