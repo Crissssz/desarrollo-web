@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="es" class="fondo-vintage">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etiquetas Semánticas HTML | Los Poco Serios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="imágenes/pez.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="fondo-vintage">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Los Poco Serios</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="nav-links">
+            <a class="nav-link" href="index.html">Inicio</a>
+            <a class="nav-link" href="integrantes.html">Conocer al equipo</a>
+            <a class="nav-link active" href="contenidos.html">Investigaciones</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="container text-center my-5">
+      <h1 class="display-4 retro-title">Etiquetas Semánticas HTML</h1>
+      <p class="lead">Etiquetas que describen el significado del contenido</p>
+    </header>
+
+    <main class="container mb-5">
+      <section class="row mb-3">
+        <div class="col-md-12 mb-3">
+          <div class="card h-100 p-4 shadow-sm">
+            <p class="mb-0">Las etiquetas semánticas describen el significado del contenido que envuelven, no solo su apariencia. Esto mejora la accesibilidad, el SEO y la mantenibilidad del código.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="row mb-5">
+        <div class="col-md-12">
+          <div class="accordion" id="accordionSemanticas">
+            <article class="accordion-item">
+              <h2 class="accordion-header" id="heading-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-header" aria-expanded="true" aria-controls="collapse-header">
+                  &lt;header&gt;
+                </button>
+              </h2>
+              <div id="collapse-header" class="accordion-collapse collapse show" aria-labelledby="heading-header" data-bs-parent="#accordionSemanticas">
+                <div class="accordion-body">
+                  <p><strong>Propósito:</strong> agrupa el contenido introductorio de una página o sección: título principal, subtítulo, logo o texto de presentación.</p>
+                  <pre class="bg-light p-3 rounded"><code>&lt;header class="container text-center my-5"&gt;
+    &lt;h1 class="display-4"&gt;Título Principal&lt;/h1&gt;
+    &lt;p class="lead"&gt;Subtítulo&lt;/p&gt;
+&lt;/header&gt;</code></pre>
+                  <aside class="border-start ps-3 mt-2">
+                    <small><strong>Dónde se usa:</strong> en todas las páginas del sitio para el encabezado principal.</small>
+                  </aside>
+                </div>
+              </div>
+            </article>
+
+            <article class="accordion-item">
+              <h2 class="accordion-header" id="heading-nav">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-nav" aria-expanded="false" aria-controls="collapse-nav">
+                  &lt;nav&gt;
+                </button>
+              </h2>
+              <div id="collapse-nav" class="accordion-collapse collapse" aria-labelledby="heading-nav" data-bs-parent="#accordionSemanticas">
+                <div class="accordion-body">
+                  <p><strong>Propósito:</strong> agrupa los enlaces de navegación principal del sitio.</p>
+                  <pre class="bg-light p-3 rounded"><code>&lt;nav class="navbar navbar-expand-lg"&gt;
+    &lt;div class="container"&gt;
+        &lt;a class="navbar-brand" href="index.html"&gt;Los Poco Serios&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+                  <aside class="border-start ps-3 mt-2">
+                    <small><strong>Dónde se usa:</strong> en el &lt;nav&gt; reutilizado en todas las páginas.</small>
+                  </aside>
+                </div>
+              </div>
+            </article>
+
+            <article class="accordion-item">
+              <h2 class="accordion-header" id="heading-main">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-main" aria-expanded="false" aria-controls="collapse-main">
+                  &lt;main&gt;
+                </button>
+              </h2>
+              <div id="collapse-main" class="accordion-collapse collapse" aria-labelledby="heading-main" data-bs-parent="#accordionSemanticas">
+                <div class="accordion-body">
+                  <p><strong>Propósito:</strong> envuelve el contenido único y central de la página. Debe existir solo una vez por página.</p>
+                  <pre class="bg-light p-3 rounded"><code>&lt;main class="container"&gt;
+    &lt;section class="row mb-5"&gt;
+        ...
+    &lt;/section&gt;
+&lt;/main&gt;</code></pre>
+                  <aside class="border-start ps-3 mt-2">
+                    <small><strong>Dónde se usa:</strong> envuelve el contenido principal de todas las páginas.</small>
+                  </aside>
+                </div>
+              </div>
+            </article>
+
+            <article class="accordion-item">
+              <h2 class="accordion-header" id="heading-section">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-section" aria-expanded="false" aria-controls="collapse-section">
+                  &lt;section&gt;
+                </button>
+              </h2>
+              <div id="collapse-section" class="accordion-collapse collapse" aria-labelledby="heading-section" data-bs-parent="#accordionSemanticas">
+                <div class="accordion-body">
+                  <p><strong>Propósito:</strong> agrupa un bloque temático con entidad propia dentro del documento.</p>
+                  <pre class="bg-light p-3 rounded"><code>&lt;section class="row mb-5"&gt;
+    &lt;div class="col-md-12 mb-3"&gt;
+        &lt;div class="card h-100 p-4 shadow-sm"&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                  <aside class="border-start ps-3 mt-2">
+                    <small><strong>Dónde se usa:</strong> patrón repetido en todas las páginas del sitio.</small>
+                  </aside>
+                </div>
+              </div>
+            </article>
+
+            <article class="accordion-item">
+              <h2 class="accordion-header" id="heading-article">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-article" aria-expanded="false" aria-controls="collapse-article">
+                  &lt;article&gt;
+                </button>
+              </h2>
+              <div id="collapse-article" class="accordion-collapse collapse" aria-labelledby="heading-article" data-bs-parent="#accordionSemanticas">
+                <div class="accordion-body">
+                  <p><strong>Propósito:</strong> contenido independiente y autocontenido que tendría sentido por sí solo fuera del contexto de la página.</p>
+                  <pre class="bg-light p-3 rounded"><code>&lt;article class="accordion-item"&gt;
+    &lt;h2 class="accordion-header"&gt;...&lt;/h2&gt;
+    &lt;div class="accordion-collapse collapse"&gt;...&lt;/div&gt;
+&lt;/article&gt;</code></pre>
+                  <aside class="border-start ps-3 mt-2">
+                    <small><strong>Dónde se usa:</strong> cada ítem de acordeón es un &lt;article&gt;.</small>
+                  </aside>
+                </div>
+              </div>
+            </article>
+
+            <article class="accordion-item">
+              <h2 class="accordion-header" id="heading-aside">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-aside" aria-expanded="false" aria-controls="collapse-aside">
+                  &lt;aside&gt;
+                </button>
+              </h2>
+              <div id="collapse-aside" class="accordion-collapse collapse" aria-labelledby="heading-aside" data-bs-parent="#accordionSemanticas">
+                <div class="accordion-body">
+                  <p><strong>Propósito:</strong> contenido relacionado pero secundario respecto al flujo principal.</p>
+                  <pre class="bg-light p-3 rounded"><code>&lt;aside class="border-start ps-3 mt-2"&gt;
+    &lt;small&gt;&lt;strong&gt;Dónde se usa:&lt;/strong&gt; ...&lt;/small&gt;
+&lt;/aside&gt;</code></pre>
+                  <aside class="border-start ps-3 mt-2">
+                    <small><strong>Dónde se usa:</strong> cada nota "Dónde se usa" dentro de esta página es un &lt;aside&gt;.</small>
+                  </aside>
+                </div>
+              </div>
+            </article>
+
+            <article class="accordion-item">
+              <h2 class="accordion-header" id="heading-footer">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-footer" aria-expanded="false" aria-controls="collapse-footer">
+                  &lt;footer&gt;
+                </button>
+              </h2>
+              <div id="collapse-footer" class="accordion-collapse collapse" aria-labelledby="heading-footer" data-bs-parent="#accordionSemanticas">
+                <div class="accordion-body">
+                  <p><strong>Propósito:</strong> pie de página o de sección: créditos, datos de contacto, enlaces legales.</p>
+                  <pre class="bg-light p-3 rounded"><code>&lt;footer&gt;
+    &lt;div class="container"&gt;
+        &lt;p class="mb-1"&gt;Los Poco Serios&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/footer&gt;</code></pre>
+                  <aside class="border-start ps-3 mt-2">
+                    <small><strong>Dónde se usa:</strong> en todas las páginas del sitio.</small>
+                  </aside>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-center">
+        <a href="etiquetas-html.html" class="btn btn-outline-dark m-2">Etiquetas de uso común</a>
+        <a href="contenidos.html" class="btn btn-outline-dark m-2">Volver a Investigaciones</a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p class="mb-1">Los Poco Serios</p>
+        <small>Proyecto de Desarrollo Web - HTML, CSS, Bootstrap, Docker y Nginx</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

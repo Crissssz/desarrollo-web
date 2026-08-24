@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es" class="fondo-vintage">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etiquetas HTML de Uso Común | Los Poco Serios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="imágenes/pez.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="fondo-vintage">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Los Poco Serios</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="nav-links">
+            <a class="nav-link" href="index.html">Inicio</a>
+            <a class="nav-link" href="integrantes.html">Conocer al equipo</a>
+            <a class="nav-link active" href="contenidos.html">Investigaciones</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="container text-center my-5">
+      <h1 class="display-4 retro-title">Etiquetas HTML de Uso Común</h1>
+      <p class="lead">Etiquetas frecuentes para estructura y contenido</p>
+    </header>
+
+    <main class="container mb-5">
+      <section class="row mb-3">
+        <div class="col-md-12 mb-3">
+          <div class="card h-100 p-4 shadow-sm">
+            <p class="mb-0">Estas son las etiquetas HTML más frecuentes para dar estructura y contenido a una página, sin implicar por sí mismas un significado semántico particular.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="row mb-5">
+        <div class="col-md-12">
+          <div class="accordion" id="accordionComunes">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-h1h6">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-h1h6" aria-expanded="true" aria-controls="collapse-h1h6">
+                  &lt;h1&gt; a &lt;h6&gt;
+                </button>
+              </h2>
+              <div id="collapse-h1h6" class="accordion-collapse collapse show" aria-labelledby="heading-h1h6" data-bs-parent="#accordionComunes">
+                <div class="accordion-body">
+                  <p><strong>Cuándo usarla:</strong> para títulos y subtítulos, respetando el orden jerárquico (un solo &lt;h1&gt; por página).</p>
+                  <p><strong>Ejemplo en el sitio:</strong> el título principal usa <code>&lt;h1 class="display-4"&gt;</code>.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-p">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-p" aria-expanded="false" aria-controls="collapse-p">
+                  &lt;p&gt;
+                </button>
+              </h2>
+              <div id="collapse-p" class="accordion-collapse collapse" aria-labelledby="heading-p" data-bs-parent="#accordionComunes">
+                <div class="accordion-body">
+                  <p><strong>Cuándo usarla:</strong> para párrafos de texto corrido; nunca para simular espaciado con párrafos vacíos.</p>
+                  <p><strong>Ejemplo en el sitio:</strong> el texto introductorio de cada tarjeta .card.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-a">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-a" aria-expanded="false" aria-controls="collapse-a">
+                  &lt;a&gt;
+                </button>
+              </h2>
+              <div id="collapse-a" class="accordion-collapse collapse" aria-labelledby="heading-a" data-bs-parent="#accordionComunes">
+                <div class="accordion-body">
+                  <p><strong>Cuándo usarla:</strong> para cualquier enlace, interno o externo.</p>
+                  <p><strong>Ejemplo en el sitio:</strong> los enlaces de la navbar.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-img">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-img" aria-expanded="false" aria-controls="collapse-img">
+                  &lt;img&gt;
+                </button>
+              </h2>
+              <div id="collapse-img" class="accordion-collapse collapse" aria-labelledby="heading-img" data-bs-parent="#accordionComunes">
+                <div class="accordion-body">
+                  <p><strong>Cuándo usarla:</strong> para incrustar imágenes; siempre con atributo alt descriptivo.</p>
+                  <p><strong>Ejemplo en el sitio:</strong> fotos de perfil en integrantes.html.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-ulol">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-ulol" aria-expanded="false" aria-controls="collapse-ulol">
+                  &lt;ul&gt;, &lt;ol&gt; y &lt;li&gt;
+                </button>
+              </h2>
+              <div id="collapse-ulol" class="accordion-collapse collapse" aria-labelledby="heading-ulol" data-bs-parent="#accordionComunes">
+                <div class="accordion-body">
+                  <p><strong>Cuándo usarla:</strong> &lt;ul&gt; para listas sin orden específico, &lt;ol&gt; cuando el orden importa.</p>
+                  <p><strong>Ejemplo en el sitio:</strong> listas de fortalezas y habilidades en las tarjetas.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-divspan">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-divspan" aria-expanded="false" aria-controls="collapse-divspan">
+                  &lt;div&gt; y &lt;span&gt;
+                </button>
+              </h2>
+              <div id="collapse-divspan" class="accordion-collapse collapse" aria-labelledby="heading-divspan" data-bs-parent="#accordionComunes">
+                <div class="accordion-body">
+                  <p><strong>Cuándo usarla:</strong> contenedores genéricos sin significado semántico. &lt;div&gt; es de bloque, &lt;span&gt; es en línea.</p>
+                  <p><strong>Ejemplo en el sitio:</strong> el grid de Bootstrap usa &lt;div&gt; con clases de columna.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-table">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-table" aria-expanded="false" aria-controls="collapse-table">
+                  &lt;table&gt;
+                </button>
+              </h2>
+              <div id="collapse-table" class="accordion-collapse collapse" aria-labelledby="heading-table" data-bs-parent="#accordionComunes">
+                <div class="accordion-body">
+                  <p><strong>Cuándo usarla:</strong> exclusivamente para datos tabulares reales (filas y columnas comparables).</p>
+                  <p><strong>Ejemplo en el sitio:</strong> tabla de comandos Docker en instalacion.html.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-form">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-form" aria-expanded="false" aria-controls="collapse-form">
+                  &lt;form&gt;, &lt;label&gt;, &lt;input&gt; y &lt;button&gt;
+                </button>
+              </h2>
+              <div id="collapse-form" class="accordion-collapse collapse" aria-labelledby="heading-form" data-bs-parent="#accordionComunes">
+                <div class="accordion-body">
+                  <p><strong>Cuándo usarla:</strong> &lt;form&gt; agrupa campos de entrada; cada &lt;input&gt; debe llevar su &lt;label&gt; asociado.</p>
+                  <pre class="bg-light p-3 rounded"><code>&lt;form&gt;
+    &lt;label for="nombre"&gt;Nombre&lt;/label&gt;
+    &lt;input type="text" id="nombre" name="nombre" class="form-control"&gt;
+    &lt;button type="submit" class="btn btn-outline-dark"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-center">
+        <a href="html-semantico.html" class="btn btn-outline-dark m-2">Etiquetas semánticas</a>
+        <a href="contenidos.html" class="btn btn-outline-dark m-2">Volver a Investigaciones</a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p class="mb-1">Los Poco Serios</p>
+        <small>Proyecto de Desarrollo Web - HTML, CSS, Bootstrap, Docker y Nginx</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
