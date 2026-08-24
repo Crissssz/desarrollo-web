@@ -4,74 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio - Damon Murray</title>
-    
-    <!-- Importación de fuentes de Google Fonts (DotGothic16 y Nunito) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="../imágenes/pez.png">
-
-    <!-- Carga de Bootstrap por CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- CSS personalizado -->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body class="bg-seccion-equipo min-vh-100">
-    <div class="container py-5">
-        
-        <!-- Título y Subtítulo arriba -->
-        <h1 class="text-center mb-4 text-dark">Portafolio de Damon Murray</h1>
-        <p class="text-center mb-5 text-dark fw-semibold">Explora mis proyectos y trabajos destacados durante el desarrollo de mi carrera profesional.</p>
+<body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">Los Contenedores Web</a>
+        <div class="d-flex gap-2">
+          <a class="nav-link" href="../index.html">Inicio</a>
+          <a class="nav-link active" href="../integrantes.html">Conocer al equipo</a>
+          <a class="nav-link" href="../investigaciones.html">Investigaciones</a>
+        </div>
+      </div>
+    </nav>
 
-        <!-- Carrusel al medio (sin imágenes) -->
+    <div class="container my-5">
+        <h1 class="text-center mb-4 retro-title">Portafolio de Damon Murray</h1>
+        <p class="text-center mb-5 text-muted">Explora mis proyectos y trabajos destacados durante el desarrollo de mi carrera profesional.</p>
+
         <div class="row justify-content-center mb-5">
             <div class="col-md-8">
-                <!-- Clase 'carousel-dark' agregada para que los controles sean visibles sobre fondos claros -->
-                <div id="carouselExampleIndicators" class="carousel slide carousel-dark shadow-sm rounded" data-bs-ride="carousel" style="background-color: rgba(255, 255, 255, 0.6);">
-                    
-                    <!-- Indicadores (Las rayitas de abajo) -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
                     
-                    <!-- Contenido del Carrusel -->
-                    <!-- py-5 da espacio arriba y abajo para que no quede aplastado -->
-                    <div class="carousel-inner text-center py-5">
-                        
-                        <!-- Diapositiva 1 -->
-                        <div class="carousel-item active px-5">
-                            <h3 class="mb-3 text-dark">Tortuga Robot: Monitoreo Móvil en Invernaderos</h3>
-                            <p class="lead text-dark">
-                                <p class="text-center text-dark fw-semibold">Problema: Los sensores fijos dejan "puntos ciegos" y reaccionan lento ante riesgos climáticos.  
-                                <p class="text-center text-dark fw-semibold">Tecnologías: ESP-8266, Sensores (DHT11, Ultrasónico), Motores NEMA-14, Drivers.  
-                                <p class="text-center text-dark fw-semibold">Características: Elimina zonas ciegas. Incluye interfaz en tiempo real y respuestas automáticas (lazo cerrado).  
-                                <p class="text-center text-dark fw-semibold">Estado: Finalizado.  </p>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card p-4">
+                                <h3 class="text-center mb-3 retro-title">Tortuga Robot: Monitoreo Móvil en Invernaderos</h3>
+                                <p class="text-center"><strong>Problema:</strong> Los sensores fijos dejan "puntos ciegos" y reaccionan lento ante riesgos climáticos.</p>
+                                <p class="text-center"><strong>Tecnologías:</strong> ESP-8266, Sensores (DHT11, Ultrasónico), Motores NEMA-14, Drivers.</p>
+                                <p class="text-center"><strong>Estado:</strong> <span class="badge bg-success">Finalizado</span></p>
+                            </div>
                         </div>
-                        
-                        <!-- Diapositiva 2 -->
-                        <div class="carousel-item px-5">
-                            <h3 class="mb-3 text-dark">Baterías verdes en automoviles</h3>
-                            <p class="text-center text-dark fw-semibold">Problema: Alta contaminación por gases invernadero de vehículos a combustión.
-                            <p class="text-center text-dark fw-semibold">Tecnologías: Hidrógeno verde, catálisis química, receptores de oxígeno.
-                            <p class="text-center text-dark fw-semibold">Características: Convierte autos tradicionales a eléctricos. Genera energía uniendo hidrógeno y oxígeno, emitiendo únicamente agua como residuo.  
-                            <p class="text-center text-dark fw-semibold">Estado: Diseño conceptual finalizado. </p>
+                        <div class="carousel-item">
+                            <div class="card p-4">
+                                <h3 class="text-center mb-3 retro-title">Baterías verdes en automóviles</h3>
+                                <p class="text-center"><strong>Problema:</strong> Alta contaminación por gases invernadero de vehículos a combustión.</p>
+                                <p class="text-center"><strong>Tecnologías:</strong> Hidrógeno verde, catálisis química, receptores de oxígeno.</p>
+                                <p class="text-center"><strong>Estado:</strong> <span class="badge bg-warning text-dark">Diseño conceptual</span></p>
+                            </div>
                         </div>
-                        
-                        <!-- Diapositiva 3 -->
-                        <div class="carousel-item px-5">
-                            <h3 class="mb-3 text-dark">Desarrollo de plataforma web</h3>
-                            <p class="text-center text-dark fw-semibold">Propósito: Crear un espacio digital propio y personalizado para visibilizar proyectos y desarrollar como programador fullstack.</p>
-                            <p class="text-center text-dark fw-semibold">Tecnologías: HTML, CSS, Bootstrap, Docker, Nginx y GitHub para control de versiones.</p>
-                            <p class="text-center text-dark fw-semibold">Características: Interfaz responsiva con diseño de estética personalizada (incluyendo scripts de cursores animados y elementos visuales dinámicos) y despliegue optimizado mediante contenedores.</p>
-                            <p class="text-center text-dark fw-semibold">Estado: En desarrollo. </p>
+                        <div class="carousel-item">
+                            <div class="card p-4">
+                                <h3 class="text-center mb-3 retro-title">Desarrollo de plataforma web</h3>
+                                <p class="text-center"><strong>Propósito:</strong> Crear un espacio digital propio y personalizado para visibilizar proyectos.</p>
+                                <p class="text-center"><strong>Tecnologías:</strong> HTML, CSS, Bootstrap, Docker, Nginx, GitHub.</p>
+                                <p class="text-center"><strong>Estado:</strong> <span class="badge bg-warning text-dark">En desarrollo</span></p>
+                            </div>
                         </div>
-                        
                     </div>
-                    
-                    <!-- Controles Izquierda/Derecha -->
+
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Anterior</span>
@@ -80,15 +71,22 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Siguiente</span>
                     </button>
-                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
                 </div>
             </div>
         </div>
 
-        <!-- Botón abajo para volver -->
         <div class="text-center mt-4">
-            <a href="Damon_Murray.html" class="btn btn-outline-dark btn-lg">Volver al perfil</a>
+            <a href="Damon_Murray.html" class="btn btn-outline-dark">Volver al perfil</a>
         </div>
-        
     </div>
-</div>
+
+    <footer>
+      <div class="container">
+        <p class="mb-1">Los Contenedores Web</p>
+        <small>Proyecto de Desarrollo Web - HTML, CSS, Bootstrap, Docker y Nginx</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

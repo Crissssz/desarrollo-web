@@ -4,46 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Investigación sobre CSS</title>
-    
-    <!-- Importación de fuentes de Google Fonts (DotGothic16 y Nunito) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="imágenes/pez.png">
-    <!-- Carga de Bootstrap por CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- CSS personalizado -->
     <link rel="stylesheet" href="css/styles.css">
-
-    <body class="bg-seccion-investigacion">
-        <!-- Encabezado Principal -->
-        <header class="container text-center py-5">
-        <h1 class="display-4 retro-title">CSS</h1>
-    </header> 
-    <main class="container">
-        <!-- Investigación, ejemplos y enlace -->
-        <section class="row mb-5">
-            <div class="col-md-12 mb-3">
-                <div class="card h-100 p-4 shadow-sm">
-                    <h2>Introducción</h2>
-                    <p>Conformado por un grupo de estudiantes de informática, investigando y desarrollando para poder dominar la infraestructura web y el despliegue mediante Docker.</p>
-                </div>
-            </div>
-        </section>
-        <section class="row mb-5">
-            <div class="col-md-12 mb-3">
-                <div class="card h-100 p-4 shadow-sm">
-                    <h2>Ejemplos</h2>
-                    <p>Conformado por un grupo de estudiantes de informática, investigando y desarrollando para poder dominar la infraestructura web y el despliegue mediante Docker.</p>
-                </div>
-            </div>
-        </section>
-        <section class="text-center pb-5">
-            <a href="https://developer.mozilla.org/es/docs/Web/CSS" class="btn btn-outline-dark btn-lg m-2">Ver más sobre CSS</a>
-            <a href="investigaciones.html" class="btn btn-outline-dark btn-lg m-2">Volver a Investigaciones</a>
-        </section>
-    </main>
-</body>
-
 </head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Los Contenedores Web</a>
+        <div class="d-flex gap-2">
+          <a class="nav-link" href="index.html">Inicio</a>
+          <a class="nav-link" href="integrantes.html">Conocer al equipo</a>
+          <a class="nav-link active" href="investigaciones.html">Investigaciones</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="container text-center my-5">
+      <h1 class="display-4">CSS</h1>
+      <p class="lead text-muted">Definición, formas de aplicar, selectores, clases e identificadores</p>
+    </header>
+
+    <main class="container mb-5">
+      <section class="row mb-5">
+        <div class="col-md-12">
+          <div class="card p-4">
+            <h2>Introducción</h2>
+            <p>Conformado por un grupo de estudiantes de informática, investigando y desarrollando para poder dominar la infraestructura web y el despliegue mediante Docker.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="row mb-5">
+        <div class="col-md-12">
+          <div class="card p-4">
+            <h2>Ejemplos</h2>
+            <p>Conformado por un grupo de estudiantes de informática, investigando y desarrollando para poder dominar la infraestructura web y el despliegue mediante Docker.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-center">
+        <a href="https://developer.mozilla.org/es/docs/Web/CSS" class="btn btn-outline-dark m-2">Ver más sobre CSS</a>
+        <a href="investigaciones.html" class="btn btn-outline-dark m-2">Volver a Investigaciones</a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p class="mb-1">Los Contenedores Web</p>
+        <small>Proyecto de Desarrollo Web - HTML, CSS, Bootstrap, Docker y Nginx</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

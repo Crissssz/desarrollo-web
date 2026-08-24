@@ -4,86 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Damon Murray</title>
-    
-    <!-- Importación de fuentes de Google Fonts (DotGothic16 y Nunito) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="../imágenes/pez.png">
-
-    <!-- Carga de Bootstrap por CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- CSS personalizado -->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-
-<body class="bg-seccion-equipo">
-    
-    <div class="container py-5">
-        
-        <!-- Perfil -->
-        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center mb-5 mt-4">
-            
-            <!-- Foto con marco" -->
-            <img src="../imágenes/damon.jpg" alt="Foto de Damon" class="rounded-circle shadow-sm mb-3 mb-md-0 me-md-4" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #cbd5e1; background-color: rgba(255,255,255,0.5);">
-            
-            <!-- Textos del perfil -->
-            <div class="text-center text-md-start">
-                <h1 class="mb-2 retro-title text-dark">Damon Murray</h1>
-                <p class="mb-0 text-dark fw-semibold">QA & Desarrollador Front-end.<br>Especialista en QA, diseño web y CSS.</p>
-            </div>
-
+<body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">Los Contenedores Web</a>
+        <div class="d-flex gap-2">
+          <a class="nav-link" href="../index.html">Inicio</a>
+          <a class="nav-link active" href="../integrantes.html">Conocer al equipo</a>
+          <a class="nav-link" href="../investigaciones.html">Investigaciones</a>
         </div>
-        
-        <!-- Contenedor  -->
-        <section class="row mb-5">
-            
-            <!-- Cuadro 1 -->
-            <div class="col-md-6 mb-4">
-                <div class="card h-100 p-4 shadow-sm">
-                    <h2>Perfil Profesional</h2>
-                    <p>Estudiante de informática con experiencia en pruebas de calidad (QA) y desarrollo full-stack.
-                    Especializado en maquetación web, CSS y administración de contenedores. 
-                    Cuento con un nivel de inglés avanzado, lo cual me permite abordar documentación técnica compleja y mejores prácticas globales.</p>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4 text-center mb-4">
+                <div class="img-placeholder mx-auto mb-3" style="width: 180px; height: 180px; border-radius: 50%;">
+                  <span class="retro-title" style="font-size: 3rem;">DM</span>
+                </div>
+                <h1 class="retro-title">Damon Murray</h1>
+                <h5 class="text-muted">QA & Desarrollador Front-end</h5>
+                <hr>
+                <div class="text-start mt-4 ps-3">
+                    <h5 class="retro-title">Habilidades Técnicas</h5>
+                    <p class="mb-1"><strong>Lenguajes:</strong> Python, Java, JavaScript, R, HTML, CSS</p>
+                    <p class="mb-1"><strong>Bases de Datos:</strong> MySQL, PostgreSQL, MongoDB</p>
+                    <p class="mb-1"><strong>Herramientas:</strong> Git, Docker, Bootstrap</p>
                 </div>
             </div>
 
-            <!-- Cuadro 2 -->
-            <div class="col-md-6 mb-4">
-                <div class="card h-100 p-4 shadow-sm">
-                    <h2>Intereses</h2>
-                    <p>Me interesa maquinar diseños web responsivos y el desarrollo de aplicaciones modernas.</p>
-                    <p>Intento crear experiencias de usuario intuitivas y atractivas como lo eran en el pasado.</p>
+            <div class="col-md-8">
+                <div class="card mb-4 p-4">
+                    <h4 class="retro-title">Perfil Profesional</h4>
+                    <p>Estudiante de informática con experiencia en pruebas de calidad (QA) y desarrollo full-stack. Especializado en maquetación web, CSS y administración de contenedores. Cuento con un nivel de inglés avanzado, lo cual me permite abordar documentación técnica compleja y mejores prácticas globales.</p>
+                </div>
 
+                <div class="card mb-4 p-4">
+                    <h4 class="retro-title">Intereses</h4>
+                    <p>Me interesa maquinar diseños web responsivos y el desarrollo de aplicaciones modernas. Intento crear experiencias de usuario intuitivas y atractivas como lo eran en el pasado.</p>
+                </div>
+
+                <h4 class="retro-title mt-5">Portafolio de Proyectos</h4>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-header"><h6 class="mb-0">Los Contenedores Web</h6></div>
+                            <div class="card-body">
+                                <p class="small mb-2"><strong>Propósito:</strong> Crear una página web responsiva y colaborativa utilizando contenedores.</p>
+                                <p class="small mb-2"><strong>Tecnologías:</strong> HTML, CSS, Bootstrap, Docker, Nginx, Git.</p>
+                                <p class="small mb-0"><strong>Estado:</strong> <span class="badge bg-warning text-dark">En desarrollo</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-header"><h6 class="mb-0">Tortuga Robot: Monitoreo Móvil en Invernaderos</h6></div>
+                            <div class="card-body">
+                                <p class="small mb-2"><strong>Problema:</strong> Los sensores fijos dejan "puntos ciegos" y reaccionan lento ante riesgos climáticos.</p>
+                                <p class="small mb-2"><strong>Tecnologías:</strong> ESP-8266, Sensores, Motores NEMA-14.</p>
+                                <p class="small mb-0"><strong>Estado:</strong> <span class="badge bg-success">Finalizado</span></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <!-- Cuadro 3 -->
-            <div class="col-md-6 mb-4">
-                <div class="card h-100 p-4 shadow-sm">
-                    <h2>Lenguajes de programación manejados</h2>
-                    <p>Python, Java, JavaScript, R, HTML, CSS</p>
-                </div>
-            </div>
-
-            <!-- Cuadro 4 -->
-            <div class="col-md-6 mb-4">
-                <div class="card h-100 p-4 shadow-sm">
-                    <h2>Sistemas de gestión de bases de datos conocidos</h2>
-                    <p>MySQL, PostgreSQL, MongoDB</p>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- Botón para ir al portafolio-->
-        <div class="text-center mt-4">
-        <!-- Botón para ir al portafolio-->
-            <a href="portafolio_DM.html" class="btn btn-outline-dark btn-lg">Ir al Portafolio</a>
-        <!-- Botón para volver a la página de integrantes -->
-            <a href="../integrantes.html" class="btn btn-outline-dark btn-lg">Volver a Integrantes</a>
         </div>
     </div>
+
+    <footer>
+      <div class="container">
+        <p class="mb-1">Los Contenedores Web</p>
+        <small>Proyecto de Desarrollo Web - HTML, CSS, Bootstrap, Docker y Nginx</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

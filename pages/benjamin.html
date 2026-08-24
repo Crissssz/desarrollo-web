@@ -4,23 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil - Benjamín Contreras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../imágenes/pez.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body class="bg-seccion-equipo">
+<body>
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand retro-title" href="../index.html">Los Contenedores Web</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="../integrantes.html">Integrantes</a></li>
-            <li class="nav-item"><a class="nav-link" href="../investigaciones.html">Investigaciones</a></li>
-          </ul>
+        <a class="navbar-brand" href="../index.html">Los Contenedores Web</a>
+        <div class="d-flex gap-2">
+          <a class="nav-link" href="../index.html">Inicio</a>
+          <a class="nav-link active" href="../integrantes.html">Conocer al equipo</a>
+          <a class="nav-link" href="../investigaciones.html">Investigaciones</a>
         </div>
       </div>
     </nav>
@@ -28,10 +26,10 @@
     <div class="container my-5">
         <div class="row">
             <div class="col-md-4 text-center mb-4">
-                <div class="img-placeholder mx-auto mb-3" style="width: 220px; height: 220px; border-radius: 50%;">
+                <div class="img-placeholder mx-auto mb-3" style="width: 180px; height: 180px; border-radius: 50%;">
                   <span class="retro-title" style="font-size: 3rem;">BC</span>
                 </div>
-                <h2 class="retro-title">Benjamín Contreras</h2>
+                <h1 class="retro-title">Benjamín Contreras</h1>
                 <h5 class="text-muted">Desarrollador Back-end</h5>
                 <hr>
                 <div class="text-start mt-4 ps-3">
@@ -43,25 +41,21 @@
             </div>
 
             <div class="col-md-8">
-                <div class="card mb-4 shadow-sm border-0">
-                    <div class="card-body">
-                        <h4 class="card-title retro-title">Perfil Profesional</h4>
-                        <p class="card-text">Estudiante de Ingeniería Civil en Informática enfocado en el desarrollo Back-end. Me apasiona la resolución de problemas lógicos, el modelado de bases de datos y el análisis matemático aplicado a la programación. Me caracterizo por ser detallista y buscar siempre la eficiencia en el código, manteniendo una fuerte disciplina para equilibrar mis desafíos académicos con el aprendizaje práctico de nuevas tecnologías.</p>
-                    </div>
+                <div class="card mb-4 p-4">
+                    <h4 class="retro-title">Perfil Profesional</h4>
+                    <p>Estudiante de Ingeniería Civil en Informática enfocado en el desarrollo Back-end. Me apasiona la resolución de problemas lógicos, el modelado de bases de datos y el análisis matemático aplicado a la programación.</p>
                 </div>
 
-                <div class="card mb-4 shadow-sm border-0">
-                    <div class="card-body">
-                        <h4 class="card-title retro-title">Intereses</h4>
-                        <p class="mb-2"><strong>Tecnológicos:</strong> Me interesa mucho la programación, el diseño y estructuración de bases de datos, y el aprendizaje de distintos lenguajes de programación.</p>
-                        <p class="mb-0"><strong>Personales:</strong> Me gusta mucho jugar al fútbol, disfrutar de la buena comida y jugar al FIFA.</p>
-                    </div>
+                <div class="card mb-4 p-4">
+                    <h4 class="retro-title">Intereses</h4>
+                    <p><strong>Tecnológicos:</strong> Me interesa mucho la programación, el diseño y estructuración de bases de datos, y el aprendizaje de distintos lenguajes de programación.</p>
+                    <p><strong>Personales:</strong> Me gusta mucho jugar al fútbol, disfrutar de la buena comida y jugar al FIFA.</p>
                 </div>
 
-                <h4 class="mb-3 retro-title mt-5">Portafolio de Proyectos</h4>
+                <h4 class="retro-title mt-5">Portafolio de Proyectos</h4>
                 <div class="row">
                     <div class="col-md-6 mb-3">
-                        <div class="card h-100 shadow-sm">
+                        <div class="card h-100">
                             <div class="card-header"><h6 class="mb-0">Los Contenedores Web</h6></div>
                             <div class="card-body">
                                 <p class="small mb-2"><strong>Propósito:</strong> Crear una página web responsiva y colaborativa utilizando contenedores.</p>
@@ -70,9 +64,8 @@
                             </div>
                         </div>
                     </div>
-                    
                     <div class="col-md-6 mb-3">
-                        <div class="card h-100 shadow-sm">
+                        <div class="card h-100">
                             <div class="card-header"><h6 class="mb-0">Modelado de Base de Datos - Clínica</h6></div>
                             <div class="card-body">
                                 <p class="small mb-2"><strong>Propósito:</strong> Optimizar el registro de pacientes, médicos y citas médicas.</p>
@@ -88,7 +81,7 @@
 
     <footer>
       <div class="container">
-        <p class="mb-1 retro-title">Los Contenedores Web</p>
+        <p class="mb-1">Los Contenedores Web</p>
         <small>Proyecto de Desarrollo Web - HTML, CSS, Bootstrap, Docker y Nginx</small>
       </div>
     </footer>
