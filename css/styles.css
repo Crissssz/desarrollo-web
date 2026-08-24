@@ -1,281 +1,305 @@
 /* =========================================
    ESTILOS GLOBALES - MINIMALISTA RETRO
    ========================================= */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap");
 
-html, body {
-    background-color: #fafafa;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    color: #1a1a1a;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+html,
+body {
+  background-color: #fafafa;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
 /* =========================================
    NAVBAR MINIMALISTA CON BURBUJAS
    ========================================= */
 .navbar {
-    background: rgba(255, 255, 255, 0.95) !important;
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid #e5e5e5;
-    padding: 1rem 0;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e5e5e5;
+  padding: 1rem 0;
 }
 
 .navbar-brand {
-    font-family: 'Space Mono', monospace;
-    font-size: 1.1rem;
-    color: #1a1a1a !important;
-    font-weight: 700;
-    letter-spacing: -0.5px;
+  font-family: "Space Mono", monospace;
+  font-size: 1.1rem;
+  color: #1a1a1a !important;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
 .nav-links {
-    display: flex;
-    gap: 8px;
-    align-items: center;
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
 .nav-links .nav-link,
 .navbar-brand {
-    color: #555 !important;
-    font-size: 0.85rem;
-    font-weight: 500;
-    padding: 0.5rem 1rem !important;
-    border-radius: 50px;
-    background: #f0f0f0;
-    transition: all 0.2s ease;
-    display: inline-block;
-    text-decoration: none;
+  color: #555 !important;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  border-radius: 50px;
+  background: #f0f0f0;
+  transition: all 0.2s ease;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .nav-links .nav-link:hover,
 .navbar-brand:hover {
-    color: #1a1a1a !important;
-    background: #e0e0e0;
+  color: #1a1a1a !important;
+  background: #e0e0e0;
 }
 
 .nav-links .nav-link.active {
-    color: #fff !important;
-    background: #1a1a1a;
+  color: #fff !important;
+  background: #1a1a1a;
 }
 
 /* =========================================
    TIPOGRAFÍA
    ========================================= */
-h1, h2, h3, h4, h5, .retro-title {
-    font-family: 'Space Mono', monospace;
-    color: #1a1a1a;
-    font-weight: 700;
-    letter-spacing: -0.5px;
+h1,
+h2,
+h3,
+h4,
+h5,
+.retro-title {
+  font-family: "Space Mono", monospace;
+  color: #1a1a1a;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
-p, li, span, td, th {
-    color: #333;
-    font-family: 'Inter', sans-serif;
+p,
+li,
+span,
+td,
+th {
+  color: #333;
+  font-family: "Inter", sans-serif;
 }
 
 code {
-    font-family: 'Space Mono', monospace;
-    font-size: 0.85em;
+  font-family: "Space Mono", monospace;
+  font-size: 0.85em;
 }
 
 /* =========================================
    TARJETAS MINIMALISTAS
    ========================================= */
 .card {
-    background: #fff !important;
-    border: 1px solid #e5e5e5 !important;
-    border-radius: 16px;
-    transition: all 0.2s ease;
+  background: #fff !important;
+  border: 1px solid #e5e5e5 !important;
+  border-radius: 16px;
+  transition: all 0.2s ease;
 }
 
 .card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 /* =========================================
    BOTONES MINIMALISTAS
    ========================================= */
 .btn-outline-dark {
-    background: #1a1a1a !important;
-    border: 1px solid #1a1a1a !important;
-    color: #fff !important;
-    border-radius: 50px;
-    font-weight: 500;
-    font-size: 0.85rem;
-    padding: 0.5rem 1.25rem;
-    transition: all 0.2s ease;
+  background: #1a1a1a !important;
+  border: 1px solid #1a1a1a !important;
+  color: #fff !important;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  padding: 0.5rem 1.25rem;
+  transition: all 0.2s ease;
 }
 
 .btn-outline-dark:hover {
-    background: #333 !important;
-    border-color: #333 !important;
-    transform: translateY(-1px);
+  background: #333 !important;
+  border-color: #333 !important;
+  transform: translateY(-1px);
 }
 
 .btn-outline-dark.disabled,
 .btn-outline-dark:disabled {
-    background: #ccc !important;
-    border-color: #ccc !important;
-    color: #666 !important;
+  background: #ccc !important;
+  border-color: #ccc !important;
+  color: #666 !important;
 }
 
 /* =========================================
    BADGES
    ========================================= */
 .tech-badge {
-    font-size: 0.85rem;
-    padding: 8px 14px;
-    margin: 4px;
-    color: #1a1a1a !important;
-    border-radius: 50px;
-    font-weight: 500;
-    font-family: 'Space Mono', monospace;
+  font-size: 0.85rem;
+  padding: 8px 14px;
+  margin: 4px;
+  color: #1a1a1a !important;
+  border-radius: 50px;
+  font-weight: 500;
+  font-family: "Space Mono", monospace;
 }
 
-.bg-tech-html { background-color: #e3f2fd; }
-.bg-tech-css { background-color: #e8f5e9; }
-.bg-tech-boot { background-color: #f3e5f5; }
-.bg-tech-nginx { background-color: #fff3e0; }
-.bg-tech-docker { background-color: #e0f7fa; }
+.bg-tech-html {
+  background-color: #e3f2fd;
+}
+.bg-tech-css {
+  background-color: #e8f5e9;
+}
+.bg-tech-boot {
+  background-color: #f3e5f5;
+}
+.bg-tech-nginx {
+  background-color: #fff3e0;
+}
+.bg-tech-docker {
+  background-color: #e0f7fa;
+}
 
 /* =========================================
    IMAGEN PLACEHOLDER
    ========================================= */
 .img-placeholder {
-    background-color: #f5f5f5;
-    border: 2px dashed #ddd;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #999;
-    font-family: 'Space Mono', monospace;
+  background-color: #f5f5f5;
+  border: 2px dashed #ddd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-family: "Space Mono", monospace;
 }
 
 /* =========================================
    FOOTER MINIMALISTA
    ========================================= */
 footer {
-    background: #fafafa;
-    border-top: 1px solid #e5e5e5;
-    padding: 1.5rem 0;
-    margin-top: 3rem;
+  background: #fafafa;
+  border-top: 1px solid #e5e5e5;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
 }
 
 footer p {
-    margin: 0;
-    color: #666;
-    font-size: 0.9rem;
-    font-family: 'Space Mono', monospace;
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+  font-family: "Space Mono", monospace;
 }
 
 footer small {
-    color: #999;
-    font-size: 0.75rem;
+  color: #999;
+  font-size: 0.75rem;
 }
 
 /* =========================================
    CONTENIDO PRINCIPAL
    ========================================= */
 .container {
-    max-width: 1100px;
+  max-width: 1100px;
 }
 
 header.container {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 section {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 /* =========================================
    TABLAS
    ========================================= */
 .table {
-    border-color: #e5e5e5;
-    font-size: 0.9rem;
+  border-color: #e5e5e5;
+  font-size: 0.9rem;
 }
 
 .table-dark {
-    background: #1a1a1a !important;
+  background: #1a1a1a !important;
 }
 
 /* =========================================
    CÓDIGO
    ========================================= */
 pre {
-    background: #1a1a1a !important;
-    color: #f0f0f0 !important;
-    border-radius: 12px;
-    padding: 1rem;
-    font-family: 'Space Mono', monospace;
-    font-size: 0.8rem;
+  background: #1a1a1a !important;
+  color: #f0f0f0 !important;
+  border-radius: 12px;
+  padding: 1rem;
+  font-family: "Space Mono", monospace;
+  font-size: 0.8rem;
 }
 
 /* =========================================
    LISTAS
    ========================================= */
 .list-group-item {
-    background: #fff !important;
-    border-color: #e5e5e5 !important;
-    color: #333 !important;
+  background: #fff !important;
+  border-color: #e5e5e5 !important;
+  color: #333 !important;
 }
 
 /* =========================================
    ACORDEÓN
    ========================================= */
 .accordion-item {
-    background: #fff !important;
-    border-color: #e5e5e5 !important;
-    border-radius: 12px !important;
+  background: #fff !important;
+  border-color: #e5e5e5 !important;
+  border-radius: 12px !important;
 }
 
 .accordion-button {
-    background: #fafafa !important;
-    color: #1a1a1a !important;
-    font-family: 'Space Mono', monospace;
-    font-weight: 700;
-    border-radius: 12px;
+  background: #fafafa !important;
+  color: #1a1a1a !important;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  border-radius: 12px;
 }
 
 .accordion-button:not(.collapsed) {
-    background: #f0f0f0 !important;
+  background: #f0f0f0 !important;
 }
 
 .accordion-button::after {
-    filter: none;
+  filter: none;
 }
 
 .accordion-body {
-    background: #fff !important;
-    color: #333 !important;
+  background: #fff !important;
+  color: #333 !important;
 }
 
 /* =========================================
    NAV TABS
    ========================================= */
 .nav-tabs {
-    border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .nav-tabs .nav-link {
-    color: #666 !important;
-    background: transparent !important;
-    border: 1px solid transparent;
-    font-family: 'Space Mono', monospace;
-    font-weight: 700;
+  color: #666 !important;
+  background: transparent !important;
+  border: 1px solid transparent;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
 }
 
 .nav-tabs .nav-link.active {
-    color: #1a1a1a !important;
-    background: #fff !important;
-    border: 1px solid #e5e5e5 !important;
-    border-bottom-color: #fff !important;
+  color: #1a1a1a !important;
+  background: #fff !important;
+  border: 1px solid #e5e5e5 !important;
+  border-bottom-color: #fff !important;
 }
 
 /* =========================================
@@ -283,21 +307,33 @@ pre {
    ========================================= */
 html.fondo-vintage,
 body.fondo-vintage {
-    background-color: #1a0505;
-    background-image:
-        radial-gradient(circle 3px at 20px 30px, #6e0d0d 100%, transparent 100%),
-        radial-gradient(circle 2px at 60px 80px, #8a1414 100%, transparent 100%),
-        radial-gradient(circle 4px at 100px 20px, #4d0808 100%, transparent 100%),
-        radial-gradient(circle 2px at 140px 60px, #a52f2f 100%, transparent 100%),
-        radial-gradient(circle 3px at 170px 100px, #6e0d0d 100%, transparent 100%),
-        radial-gradient(ellipse 25px 8px at 50px 50px, rgba(165, 47, 47, 0.5) 100%, transparent 100%),
-        radial-gradient(ellipse 18px 6px at 150px 130px, rgba(110, 13, 13, 0.5) 100%, transparent 100%),
-        radial-gradient(ellipse 15px 20px at 30px 110px, rgba(90, 8, 8, 0.4) 100%, transparent 100%);
-    background-repeat: repeat;
-    background-size: 200px 150px;
-    background-attachment: fixed;
-    font-family: 'Inter', sans-serif;
-    min-height: 100%;
+  background-color: #1a0505;
+  background-image:
+    radial-gradient(circle 3px at 20px 30px, #6e0d0d 100%, transparent 100%),
+    radial-gradient(circle 2px at 60px 80px, #8a1414 100%, transparent 100%),
+    radial-gradient(circle 4px at 100px 20px, #4d0808 100%, transparent 100%),
+    radial-gradient(circle 2px at 140px 60px, #a52f2f 100%, transparent 100%),
+    radial-gradient(circle 3px at 170px 100px, #6e0d0d 100%, transparent 100%),
+    radial-gradient(
+      ellipse 25px 8px at 50px 50px,
+      rgba(165, 47, 47, 0.5) 100%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 18px 6px at 150px 130px,
+      rgba(110, 13, 13, 0.5) 100%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 15px 20px at 30px 110px,
+      rgba(90, 8, 8, 0.4) 100%,
+      transparent 100%
+    );
+  background-repeat: repeat;
+  background-size: 200px 150px;
+  background-attachment: fixed;
+  font-family: "Inter", sans-serif;
+  min-height: 100%;
 }
 
 body.fondo-vintage h1,
@@ -305,79 +341,79 @@ body.fondo-vintage h2,
 body.fondo-vintage h3,
 body.fondo-vintage h4,
 body.fondo-vintage .retro-title {
-    color: #d94848 !important;
-    text-shadow: 1px 1px 2px #000;
+  color: #d94848 !important;
+  text-shadow: 1px 1px 2px #000;
 }
 
 body.fondo-vintage p,
 body.fondo-vintage li,
 body.fondo-vintage .lead {
-    color: #e8d5d5 !important;
+  color: #e8d5d5 !important;
 }
 
 body.fondo-vintage a {
-    color: #e07a7a;
+  color: #e07a7a;
 }
 
 body.fondo-vintage a:hover {
-    color: #ff9999;
+  color: #ff9999;
 }
 
 body.fondo-vintage code {
-    background-color: #2a0a0a !important;
-    color: #ff8080 !important;
-    border: 1px solid #6e0d0d;
+  background-color: #2a0a0a !important;
+  color: #ff8080 !important;
+  border: 1px solid #6e0d0d;
 }
 
 body.fondo-vintage pre {
-    background-color: #150404 !important;
-    color: #e8d5d5 !important;
-    border: 1px solid #6e0d0d;
+  background-color: #150404 !important;
+  color: #e8d5d5 !important;
+  border: 1px solid #6e0d0d;
 }
 
 body.fondo-vintage .navbar {
-    background-color: #0d0202 !important;
-    border-bottom: 1px solid #6e0d0d;
+  background-color: #0d0202 !important;
+  border-bottom: 1px solid #6e0d0d;
 }
 
 body.fondo-vintage .navbar-brand,
 body.fondo-vintage .nav-link {
-    color: #e07a7a !important;
+  color: #e07a7a !important;
 }
 
 body.fondo-vintage .nav-link.active {
-    color: #ffffff !important;
-    background: rgba(255, 255, 255, 0.15);
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.15);
 }
 
 body.fondo-vintage .navbar-toggler-icon {
-    filter: invert(1);
+  filter: invert(1);
 }
 
 body.fondo-vintage .nav-links {
-    background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 body.fondo-vintage .card {
-    background: rgba(20, 5, 5, 0.8) !important;
-    color: #e8d5d5 !important;
-    border: 1px solid rgba(165, 47, 47, 0.5) !important;
+  background: rgba(20, 5, 5, 0.8) !important;
+  color: #e8d5d5 !important;
+  border: 1px solid rgba(165, 47, 47, 0.5) !important;
 }
 
 body.fondo-vintage .btn-outline-dark {
-    background: linear-gradient(180deg, #4d0808 0%, #2a0404 100%) !important;
-    border: 1px solid #a52f2f !important;
-    color: #f0c0c0 !important;
+  background: linear-gradient(180deg, #4d0808 0%, #2a0404 100%) !important;
+  border: 1px solid #a52f2f !important;
+  color: #f0c0c0 !important;
 }
 
 body.fondo-vintage .btn-outline-dark:hover {
-    background: linear-gradient(180deg, #6e0d0d 0%, #3a0606 100%) !important;
-    color: #ffffff !important;
+  background: linear-gradient(180deg, #6e0d0d 0%, #3a0606 100%) !important;
+  color: #ffffff !important;
 }
 
 body.fondo-vintage .tech-badge {
-    color: #f0c0c0 !important;
-    border: 1px solid rgba(165, 47, 47, 0.5);
+  color: #f0c0c0 !important;
+  border: 1px solid rgba(165, 47, 47, 0.5);
 }
 
 body.fondo-vintage .bg-tech-html,
@@ -385,83 +421,195 @@ body.fondo-vintage .bg-tech-css,
 body.fondo-vintage .bg-tech-boot,
 body.fondo-vintage .bg-tech-nginx,
 body.fondo-vintage .bg-tech-docker {
-    background-color: #4d0808 !important;
+  background-color: #4d0808 !important;
 }
 
 body.fondo-vintage .nav-tabs {
-    border-bottom: 1px solid #6e0d0d;
+  border-bottom: 1px solid #6e0d0d;
 }
 
 body.fondo-vintage .nav-tabs .nav-link {
-    color: #e07a7a !important;
-    background: transparent !important;
+  color: #e07a7a !important;
+  background: transparent !important;
 }
 
 body.fondo-vintage .nav-tabs .nav-link.active {
-    color: #ffffff !important;
-    background: #2a0404 !important;
-    border: 1px solid #a52f2f !important;
+  color: #ffffff !important;
+  background: #2a0404 !important;
+  border: 1px solid #a52f2f !important;
 }
 
 body.fondo-vintage .accordion-item {
-    background-color: #150404 !important;
-    border: 1px solid #6e0d0d !important;
+  background-color: #150404 !important;
+  border: 1px solid #6e0d0d !important;
 }
 
 body.fondo-vintage .accordion-button {
-    background-color: #2a0404 !important;
-    color: #f0c0c0 !important;
+  background-color: #2a0404 !important;
+  color: #f0c0c0 !important;
 }
 
 body.fondo-vintage .accordion-button:not(.collapsed) {
-    background-color: #4d0808 !important;
-    color: #ffffff !important;
+  background-color: #4d0808 !important;
+  color: #ffffff !important;
 }
 
 body.fondo-vintage .accordion-button::after {
-    filter: invert(1) sepia(1) saturate(5) hue-rotate(-40deg);
+  filter: invert(1) sepia(1) saturate(5) hue-rotate(-40deg);
 }
 
 body.fondo-vintage .accordion-body {
-    background-color: #1a0505 !important;
-    color: #e8d5d5 !important;
+  background-color: #1a0505 !important;
+  color: #e8d5d5 !important;
 }
 
 body.fondo-vintage .list-group-item {
-    background-color: rgba(20, 5, 5, 0.7) !important;
-    color: #e8d5d5 !important;
-    border-color: rgba(165, 47, 47, 0.4) !important;
+  background-color: rgba(20, 5, 5, 0.7) !important;
+  color: #e8d5d5 !important;
+  border-color: rgba(165, 47, 47, 0.4) !important;
 }
 
 body.fondo-vintage .img-placeholder {
-    background-color: rgba(78, 8, 8, 0.4) !important;
-    border: 2px dashed #a52f2f !important;
-    color: #e8d5d5 !important;
+  background-color: rgba(78, 8, 8, 0.4) !important;
+  border: 2px dashed #a52f2f !important;
+  color: #e8d5d5 !important;
 }
 
 body.fondo-vintage footer {
-    background: #0d0202;
-    border-top: 1px solid #6e0d0d;
+  background: #0d0202;
+  border-top: 1px solid #6e0d0d;
 }
 
 body.fondo-vintage footer p,
 body.fondo-vintage footer small {
-    color: #e07a7a;
+  color: #e07a7a;
 }
 
 body.fondo-vintage .table {
-    color: #e8d5d5 !important;
-    border-color: rgba(165, 47, 47, 0.5) !important;
+  color: #e8d5d5 !important;
+  border-color: rgba(165, 47, 47, 0.5) !important;
 }
 
 body.fondo-vintage .table-dark {
-    background: rgba(45, 5, 5, 0.9) !important;
+  background: rgba(45, 5, 5, 0.9) !important;
 }
 
 body.fondo-vintage th {
-    color: #f0c0c0 !important;
+  color: #f0c0c0 !important;
 }
 
 body.fondo-vintage td {
-    color: #e8d5d5 !important;
+  color: #e8d5d5 !important;
+}
+
+/* =========================================
+   TEMA TELARAÑA SPIDERMAN (pages/italo.html)
+   ========================================= */
+html.fondo-telarana,
+body.fondo-telarana {
+  background-color: #0a0a1a;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Cg fill='none' stroke='%23d92626' stroke-width='0.8' opacity='0.55'%3E%3Ccircle cx='200' cy='200' r='40'/%3E%3Ccircle cx='200' cy='200' r='80'/%3E%3Ccircle cx='200' cy='200' r='120'/%3E%3Ccircle cx='200' cy='200' r='160'/%3E%3Ccircle cx='200' cy='200' r='200'/%3E%3Cline x1='200' y1='200' x2='200' y2='0'/%3E%3Cline x1='200' y1='200' x2='400' y2='60'/%3E%3Cline x1='200' y1='200' x2='400' y2='340'/%3E%3Cline x1='200' y1='200' x2='200' y2='400'/%3E%3Cline x1='200' y1='200' x2='0' y2='340'/%3E%3Cline x1='200' y1='200' x2='0' y2='60'/%3E%3Cline x1='200' y1='200' x2='340' y2='0'/%3E%3Cline x1='200' y1='200' x2='60' y2='0'/%3E%3Cline x1='200' y1='200' x2='340' y2='400'/%3E%3Cline x1='200' y1='200' x2='60' y2='400'/%3E%3C/g%3E%3C/svg%3E"),
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(30, 60, 200, 0.35) 0%,
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at 85% 75%,
+      rgba(217, 38, 38, 0.3) 0%,
+      transparent 45%
+    );
+  background-repeat: repeat, no-repeat, no-repeat;
+  background-size:
+    500px 500px,
+    cover,
+    cover;
+  background-attachment: fixed, fixed, fixed;
+  font-family: "Nunito", sans-serif;
+  min-height: 100%;
+}
+
+body.fondo-telarana h1,
+body.fondo-telarana h2,
+body.fondo-telarana h3,
+body.fondo-telarana h4,
+body.fondo-telarana .retro-title {
+  color: #f2f2ff !important;
+  text-shadow:
+    0 0 10px rgba(217, 38, 38, 0.6),
+    0 0 18px rgba(30, 60, 200, 0.4);
+}
+
+body.fondo-telarana p,
+body.fondo-telarana li,
+body.fondo-telarana .lead,
+body.fondo-telarana .text-muted {
+  color: #cfd0e8 !important;
+}
+
+body.fondo-telarana .navbar {
+  background: rgba(10, 10, 26, 0.92) !important;
+  border-bottom: 1px solid #d92626;
+}
+
+body.fondo-telarana .navbar-brand,
+body.fondo-telarana .nav-link {
+  color: #cfd0e8 !important;
+}
+
+body.fondo-telarana .nav-link:hover {
+  color: #ff5c5c !important;
+}
+
+body.fondo-telarana .nav-link.active {
+  color: #ffffff !important;
+  background: linear-gradient(
+    90deg,
+    rgba(217, 38, 38, 0.25),
+    rgba(30, 60, 200, 0.25)
+  );
+}
+
+body.fondo-telarana .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+body.fondo-telarana .card {
+  background: rgba(15, 15, 32, 0.88) !important;
+  color: #e2e2f5 !important;
+  border: 1px solid rgba(217, 38, 38, 0.4) !important;
+  box-shadow: 0 0 0 1px rgba(30, 60, 200, 0.15) inset;
+}
+
+body.fondo-telarana .card:hover {
+  border-color: rgba(30, 60, 200, 0.6) !important;
+  box-shadow: 0 4px 20px rgba(217, 38, 38, 0.25);
+}
+
+body.fondo-telarana .btn-outline-dark {
+  background: linear-gradient(135deg, #d92626 0%, #1e3cc8 100%) !important;
+  border: 1px solid #ff5c5c !important;
+  color: #ffffff !important;
+}
+
+body.fondo-telarana .btn-outline-dark:hover {
+  background: linear-gradient(135deg, #ff3b3b 0%, #2a4fe0 100%) !important;
+  color: #ffffff !important;
+}
+
+body.fondo-telarana .img-placeholder {
+  background-color: rgba(30, 60, 200, 0.15) !important;
+  border: 2px dashed #d92626 !important;
+  color: #e2e2f5 !important;
+}
+
+body.fondo-telarana footer {
+  background: #0a0a1a;
+  border-top: 1px solid #d92626;
+}
+
+body.fondo-telarana footer p,
+body.fondo-telarana footer small {
+  color: #9a9ac0;
 }

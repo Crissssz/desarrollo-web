@@ -1,96 +1,171 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="es" class="fondo-telarana">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ítalo Osorio - Perfil</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="../imágenes/pez.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="../imágenes/pez.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="fondo-telarana">
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="../index.html">Los Poco Serios</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Navegación">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Navegación"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="nav-links">
+          <div class="d-flex gap-2">
             <a class="nav-link" href="../index.html">Inicio</a>
-            <a class="nav-link active" href="../integrantes.html">Conocer al equipo</a>
-            <a class="nav-link" href="../contenidos.html">Investigaciones</a>
+            <a class="nav-link active" href="../integrantes.html"
+              >Conocer al equipo</a
+            >
+            <a class="nav-link" href="../investigaciones.html"
+              >Investigaciones</a
+            >
           </div>
         </div>
       </div>
     </nav>
 
     <div class="container my-5">
-        <div class="row">
-            <div class="col-md-4 text-center mb-4">
-                <div class="img-placeholder mx-auto mb-3" style="width: 180px; height: 180px; border-radius: 50%;">
-                  <span style="font-size: 3rem; font-family: 'Space Mono', monospace;">IO</span>
-                </div>
-                <h1 style="font-family: 'Space Mono', monospace;">Ítalo Osorio</h1>
-                <h5 class="text-muted">Desarrollador</h5>
-                <hr>
-                <div class="text-start mt-4 ps-3">
-                    <h5 style="font-family: 'Space Mono', monospace;">Habilidades Técnicas</h5>
-                    <p class="mb-1"><strong>Lenguajes:</strong> HTML, CSS, JavaScript</p>
-                    <p class="mb-1"><strong>Bases de Datos:</strong> MySQL</p>
-                    <p class="mb-1"><strong>Herramientas:</strong> Git, GitHub, VS Code</p>
-                </div>
-            </div>
-
-            <div class="col-md-8">
-                <div class="card mb-4 p-4">
-                    <h4 style="font-family: 'Space Mono', monospace;">Perfil Profesional</h4>
-                    <p>Estudiante de Ingeniería Civil Informática enfocado en el desarrollo web front-end. Me interesa crear interfaces limpias y accesibles utilizando HTML semántico y CSS.</p>
-                </div>
-
-                <div class="card mb-4 p-4">
-                    <h4 style="font-family: 'Space Mono', monospace;">Intereses</h4>
-                    <p><strong>Tecnológicos:</strong> HTML semántico, accesibilidad web, diseño responsivo.</p>
-                    <p><strong>Personales:</strong> Código limpio, buenas prácticas de desarrollo.</p>
-                </div>
-
-                <h4 style="font-family: 'Space Mono', monospace;" class="mt-5">Portafolio de Proyectos</h4>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <div class="card h-100">
-                            <div class="card-header"><h6 class="mb-0">Los Poco Serios</h6></div>
-                            <div class="card-body">
-                                <p class="small mb-2"><strong>Propósito:</strong> Crear una página web responsiva y colaborativa utilizando contenedores.</p>
-                                <p class="small mb-2"><strong>Tecnologías:</strong> HTML, CSS, Bootstrap, Docker, Nginx, Git.</p>
-                                <p class="small mb-0"><strong>Estado:</strong> <span class="badge bg-warning text-dark">En desarrollo</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card h-100">
-                            <div class="card-header"><h6 class="mb-0">Estructura HTML Semántica</h6></div>
-                            <div class="card-body">
-                                <p class="small mb-2"><strong>Propósito:</strong> Investigar y aplicar etiquetas semánticas en el sitio web del equipo.</p>
-                                <p class="small mb-2"><strong>Tecnologías:</strong> HTML5, WAI-ARIA.</p>
-                                <p class="small mb-0"><strong>Estado:</strong> <span class="badge bg-success">Finalizado</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-md-4 text-center mb-4">
+          <img
+            src="../imágenes/Italo_Avatar.png"
+            alt="Avatar de Ítalo Osorio"
+            class="mx-auto mb-3 d-block"
+            style="
+              width: 180px;
+              height: 180px;
+              border-radius: 50%;
+              object-fit: cover;
+              border: 3px solid #d92626;
+              box-shadow: 0 0 20px rgba(30, 60, 200, 0.5);
+            "
+          />
+          <h1 class="retro-title">Ítalo Osorio</h1>
+          <h5 class="text-muted">Desarrollador</h5>
+          <hr />
+          <div class="text-start mt-4 ps-3">
+            <h5 class="retro-title">Habilidades Técnicas</h5>
+            <p class="mb-1">
+              <strong>Lenguajes:</strong> HTML, CSS, JavaScript
+            </p>
+            <p class="mb-1">
+              <strong>Herramientas:</strong> Git, GitHub, Bootstrap
+            </p>
+            <p class="mb-1">
+              <strong>Enfoque:</strong> Estructura semántica y navegación web
+            </p>
+          </div>
         </div>
+
+        <div class="col-md-8">
+          <div class="card mb-4 p-4">
+            <h4 class="retro-title">Perfil Profesional</h4>
+            <p>
+              Estudiante de Ingeniería Civil Informática, enfocado en la
+              estructura HTML y la semántica web. Me interesa construir sitios
+              accesibles y bien organizados, cuidando que cada etiqueta cumpla
+              su propósito dentro del documento.
+            </p>
+          </div>
+
+          <div class="card mb-4 p-4">
+            <h4 class="retro-title">Intereses</h4>
+            <p>
+              <strong>Tecnológicos:</strong> Estructuración de contenido web,
+              accesibilidad y buenas prácticas de maquetación.
+            </p>
+            <p>
+              <strong>Personales:</strong> Disfruto explorar nuevas tecnologías
+              y aprender junto a mi equipo.
+            </p>
+          </div>
+
+          <h4 class="retro-title mt-5">Portafolio de Proyectos</h4>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div class="card h-100">
+                <div class="card-header">
+                  <h6 class="mb-0">Los Poco Serios</h6>
+                </div>
+                <div class="card-body">
+                  <p class="small mb-2">
+                    <strong>Propósito:</strong> Crear una página web responsiva
+                    y colaborativa utilizando contenedores.
+                  </p>
+                  <p class="small mb-2">
+                    <strong>Tecnologías:</strong> HTML, CSS, Bootstrap, Docker,
+                    Nginx, Git.
+                  </p>
+                  <p class="small mb-0">
+                    <strong>Estado:</strong>
+                    <span class="badge bg-warning text-dark"
+                      >En desarrollo</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="card h-100">
+                <div class="card-header"><h6 class="mb-0">Espacio-TSC</h6></div>
+                <div class="card-body">
+                  <p class="small mb-2">
+                    <strong>Propósito:</strong> Proyecto de desarrollo web
+                    personal.
+                  </p>
+                  <p class="small mb-2">
+                    <strong>Repositorio:</strong>
+                    <a
+                      href="https://github.com/Dheamm/Espacio-TSC"
+                      target="_blank"
+                      rel="noopener"
+                      >github.com/Dheamm/Espacio-TSC</a
+                    >
+                  </p>
+                  <p class="small mb-0">
+                    <strong>Estado:</strong>
+                    <span class="badge bg-warning text-dark">Finalizado</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer>
       <div class="container">
         <p class="mb-1">Los Poco Serios</p>
-        <small>Proyecto de Desarrollo Web - HTML, CSS, Bootstrap, Docker y Nginx</small>
+        <small
+          >Proyecto de Desarrollo Web - HTML, CSS, Bootstrap, Docker y
+          Nginx</small
+        >
       </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
